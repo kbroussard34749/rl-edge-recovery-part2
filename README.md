@@ -2,6 +2,10 @@
 
 PhDAI-830 Part 2, Keith G. Broussard. Simulation only. No network-device, hypervisor, service-management, SSH, cloud, or production-control interface is included. Submitted Part 1 is the design baseline; this repository contains implementation and measured evidence created October 9, 2026.
 
+## Incremental restructuring status
+
+A capstone-style structural refactor is being built in gated increments. The foundation is prepared; simulator and controller modules are pending. The existing commands below still run the original implementation. The submitted [Part 1 plan](docs/plan/RL_Project_Part_1_Plan_and_Design_Report_Keith_Broussard.docx), [experiment protocol](docs/experiment_protocol.md), and [implementation gates](docs/implementation_gates.md) establish the baseline. No refactored experiment is claimed complete.
+
 ## Run from a clean extracted directory
 
 Requires Python 3.12 (tested 3.12.14 on macOS). Windows execution has not been tested; peak RSS is unavailable where the standard-library resource module is absent. Experiment, tests, summaries, and live demo use the standard library. No pip installation is required. Commands assume this directory is current and `python3` points to Python 3.12.
@@ -53,9 +57,9 @@ No controller proposes or executes prohibited actions in these final evaluations
 
 Core simulation/state/action/reward/filter design, 24 configurations, splits, algorithms, alpha candidates, seeds, and episode budget are retained. Specific legal starting configurations and deterministic ties have been instantiated. Standard-library `random.Random`, CSV and JSON replace proposed NumPy/pandas bookkeeping; no RL behavior change is claimed, and cross-library seeds are not assumed equivalent. Transition caching accelerates repeated deterministic transitions without changing their definitions. The complete pilot allowed the planned budget, so no deadline-driven episode/seed reduction was needed. The relative ten-workday timeline was replaced by the actual October 9 execution; runtime is not evidence of ten days of work. Neural architectures and MARL were not added. An exact lookup limitation is reported rather than tuned away on test scenarios.
 
-## AI assistance and unresolved disclosure placement
+## AI assistance
 
-OpenAI Codex assisted with source inspection, implementation, test construction, experiment execution, evidence checking, analysis, and preparation of presentation materials. Keith's review, explanation, and personal reflection remain separate requirements; this file does not claim that those are complete. The assignment lists video, slides, and repository, but says AI use must be disclosed “in your written report.” That placement remains unresolved. This README and the deck carry a visible disclosure; no extra report requirement is invented.
+OpenAI Codex assisted with source inspection, implementation, test construction, experiment execution, evidence checking, analysis, and preparation of presentation materials. It also assisted with this incremental structural refactor and its documentation.
 
 ## Access and submission
 
