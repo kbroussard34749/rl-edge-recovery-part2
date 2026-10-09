@@ -1,6 +1,6 @@
 """Simulation-only edge recovery package built in separate increments.
 
-Environment, filtering, reward, and scenarios are implemented. Controllers and
-experiment orchestration are pending. Importing the package does not run an
-experiment or change outputs.
+The simulator, controllers, training, and evaluation modules are implemented.
+Full experiment orchestration and demo migration are pending. Importing this
+package does not run an experiment or change outputs.
 """

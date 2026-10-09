@@ -7,8 +7,8 @@ This is the current implementation record, not a reconstruction of earlier appro
 | Increment | Planned scope | Evidence before approval | Status |
 |---|---|---|---|
 | 1. Foundation | Baseline plan, package foundation, gate policy, protocol, evidence inventory, presentation map | Original source hashes; copied-plan identity; existing implementation unchanged | Committed locally: be7a681 |
-| 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Approved for commit |
-| 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Not started |
+| 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Committed locally: c4c50f0 |
+| 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Approved for commit |
 | 4. Experiment | Orchestration, configuration, isolated reproduction, analysis and policy verification | Full planned run and artifact comparisons | Not started |
 | 5. Demonstration | Local demo, boundary fixture, run instructions, final presentation path alignment | Actual demo cases and final code/evidence consistency | Not started |
 | 6. Release | Approved cumulative changes, package and remote | Clean extraction checks, contents and access status | Not started |
@@ -34,3 +34,15 @@ Verification: 17 tests passed (nine retained original tests and eight modular si
 Proposed commit: `Extract commented simulator and verify reference behavior`.
 
 Approval received October 9, 2026 for the simulator commit and the controllers, training, and evaluation increment. The controller-layer commit requires its own check-in. No full refactored training run, push, instructor invitation, or replacement ZIP has occurred.
+
+## Controller-layer check-in — October 9, 2026
+
+The approved increment extracts controllers.py, training.py, evaluation.py, and runtime.py. Comments explain action-value learning, future reward, proposed-command updates, exploration, fixed greedy ties, split boundaries, and metric interpretation.
+
+All 25 tests passed: nine retained original tests, eight modular simulator tests, and eight controller/evaluation tests. Eight 601-episode development cases per implementation (4,808 episodes each) produced identical episode CSVs, curves, and Q-table JSON. Timing and cumulative process RSS were explicitly excluded from equality. Evaluation with all 20 saved final policies matched 420 retained episode records and 2,832 traces. Rule action comparisons and validation score comparisons passed, and all 187 original output hashes remain unchanged.
+
+These development runs are extraction checks, not the full planned experiment. Temporary training files were removed automatically; hashes are recorded in controller_checks.json. Full experiment orchestration, analysis migration, and reproduction remain pending.
+
+Proposed commit: `Extract commented controllers training and evaluation`.
+
+Pre- and post-check-in approval granted October 9, 2026 for the current code, experiment orchestration, evidence relocation, and full isolated reproduction. These stages can be committed after their checks pass. This authorization does not extend to pushing, instructor access, a replacement ZIP, or presentation edits. No push, invitation, presentation edit, or replacement ZIP has occurred.

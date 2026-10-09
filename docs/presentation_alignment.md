@@ -26,3 +26,7 @@ Reference: RL_Project_Part_2_Keith_Broussard_Draft_v3.pptx, inspected October 9,
 ## Simulator increment verification
 
 The modular simulator preserves slides 4–6: node resources, dependency, state, action order, fixed filter, reward, and termination. Test discovery currently runs 17 tests: nine original reference tests and eight modular boundary tests. These are implementation checks after the original run, not a revision of its historical nine-test result. The deck is unchanged; final test-count wording will be reconciled after the test migration is complete.
+
+## Controller-layer verification
+
+The extracted modules retain the learning and evaluation behavior described in slides 6–11. Comments make the proposed-action Q update, exploration schedule, frozen-policy evaluation, and unseen-state restart tie explicit. Re-evaluating the 20 saved policies matches the original result rows and traces. The current test suite contains 25 tests across original and modular checks; these later extraction checks remain distinct from the original nine-test result. No slide or narration file was edited.

@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "reference_commit": "5b5a255143427bfaf52416be555970d0b7d788ca",
+  "scope": "Controller extraction; full experiment orchestration is pending",
+  "development_training_runs_per_implementation": 8,
+  "development_episodes_per_implementation": 4808,
+  "training_comparisons": [
+    {
+      "filtered": false,
+      "alpha": 0.1,
+      "seed": 100,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "0966cb904a145fcb28f4b95bfa53f65afc1374c11f59f85372c6c3d44f0f89bd",
+        "curve.json": "5ba84be3d4729a107c2da3588361ea35cfed3e8d8898967394f24c106277b2c1",
+        "policy.json": "89c793cf2bef9105f21a9fa62f2e0dcb2aca7bac0eedff658e3b7b845e0ea6a3"
+      },
+      "q_states": 550
+    },
+    {
+      "filtered": false,
+      "alpha": 0.1,
+      "seed": 1000,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "857854c2b27c947801c0f37cb52bf948a576e3c4c950b410e410abfd1c395a53",
+        "curve.json": "ce4f600c8312955d78fc5235509b002596d376563a3c48a833119501b6f9ed5a",
+        "policy.json": "4e6be1553b3c92dec8ca1252bc2516fd33fdcc0ca38187bb4d452197197b9f92"
+      },
+      "q_states": 535
+    },
+    {
+      "filtered": false,
+      "alpha": 0.3,
+      "seed": 100,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "eb774b4e42e41df53b8f3871fefd38081d74df2143d4b0e6e1b8913344638386",
+        "curve.json": "d72a8aab58e9257c510b31d807db207c074295bd49d805189e339b205962ed58",
+        "policy.json": "cc4d26a0f7689eea1651a52c90d7fe4db67ecac5b8b92f79fa09b79ec2dfc315"
+      },
+      "q_states": 558
+    },
+    {
+      "filtered": false,
+      "alpha": 0.3,
+      "seed": 1000,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "5b74432231e83aadf960875867a07ba33edbb7eefe058459b3aa2699d8012e58",
+        "curve.json": "51931f110f0b2ef3a9c461e800443ab4d7b50dd9a73bd697dd8e4b2dd9aa6c08",
+        "policy.json": "e4945c12a26eda0ee09f7df27dd50d6f66265f107147f56d2f785d7cc20b15a0"
+      },
+      "q_states": 530
+    },
+    {
+      "filtered": true,
+      "alpha": 0.1,
+      "seed": 100,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "0966cb904a145fcb28f4b95bfa53f65afc1374c11f59f85372c6c3d44f0f89bd",
+        "curve.json": "5ba84be3d4729a107c2da3588361ea35cfed3e8d8898967394f24c106277b2c1",
+        "policy.json": "89c793cf2bef9105f21a9fa62f2e0dcb2aca7bac0eedff658e3b7b845e0ea6a3"
+      },
+      "q_states": 550
+    },
+    {
+      "filtered": true,
+      "alpha": 0.1,
+      "seed": 1000,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "857854c2b27c947801c0f37cb52bf948a576e3c4c950b410e410abfd1c395a53",
+        "curve.json": "ce4f600c8312955d78fc5235509b002596d376563a3c48a833119501b6f9ed5a",
+        "policy.json": "4e6be1553b3c92dec8ca1252bc2516fd33fdcc0ca38187bb4d452197197b9f92"
+      },
+      "q_states": 535
+    },
+    {
+      "filtered": true,
+      "alpha": 0.3,
+      "seed": 100,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "eb774b4e42e41df53b8f3871fefd38081d74df2143d4b0e6e1b8913344638386",
+        "curve.json": "d72a8aab58e9257c510b31d807db207c074295bd49d805189e339b205962ed58",
+        "policy.json": "cc4d26a0f7689eea1651a52c90d7fe4db67ecac5b8b92f79fa09b79ec2dfc315"
+      },
+      "q_states": 558
+    },
+    {
+      "filtered": true,
+      "alpha": 0.3,
+      "seed": 1000,
+      "episodes": 601,
+      "artifact_sha256": {
+        "episodes.csv": "5b74432231e83aadf960875867a07ba33edbb7eefe058459b3aa2699d8012e58",
+        "curve.json": "51931f110f0b2ef3a9c461e800443ab4d7b50dd9a73bd697dd8e4b2dd9aa6c08",
+        "policy.json": "e4945c12a26eda0ee09f7df27dd50d6f66265f107147f56d2f785d7cc20b15a0"
+      },
+      "q_states": 530
+    }
+  ],
+  "nonmatching_metadata_allowed": [
+    "seconds",
+    "process_peak_rss_bytes"
+  ],
+  "retained_final_policies_evaluated": 20,
+  "evaluation_rows_matched": 420,
+  "trace_rows_matched": 2832,
+  "rule_action_comparisons": 2832,
+  "validation_score_comparisons": 20,
+  "evaluated_policy_tables_unchanged": true,
+  "original_output_files_unchanged": 187,
+  "source_sha256": {
+    "src/edge_recovery/controllers.py": "6ee68df2a0d08ae6373fdfdd218121f69ad4da859977391b69655e009455bd3e",
+    "src/edge_recovery/training.py": "9974f766d1eb15fad2d3a06cf081d09cbc1572104d5b487e07f1ba887a9fd2a7",
+    "src/edge_recovery/evaluation.py": "01d2f006fbea9e3c657f9f32911684dc60e184d9b77338246a9e704625403d2d",
+    "src/edge_recovery/runtime.py": "1ce03ecc91eddf7c56dadfa92da91e04f703734a296909c7638738c27038950a",
+    "tests/test_controllers.py": "b740854ce533f53e2657cc4ccb7076ad88fe185be1a09996410a6f488f920d1b",
+    "scripts/verify_controller_equivalence.py": "b0421195fa66493a692de6c862681b40e553ba364cf6cc008b19ea215ed2ff1d"
+  }
+}

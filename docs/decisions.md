@@ -10,7 +10,7 @@ Rationale: the current `recovery.py` combines simulation, controllers, training,
 
 Consequence: imports, repository paths, CLI entry points, and evidence references will change. State, action, reward, filter, scenario, and learning behavior remain the reference behavior.
 
-Status: environment, safety filter, reward, and scenario modules are extracted and verified. Controller extraction and entry-point migration are pending.
+Status: environment, safety filter, reward, and scenario modules are extracted and verified. Controller, training, and evaluation extraction checks now pass. Entry-point migration and full orchestration are pending.
 
 ## October 9, 2026 — Submitted design as implementation baseline
 
@@ -51,3 +51,13 @@ Rationale: both learning conditions need the same physical execution rules. Filt
 Consequence: immutable state, command indices, physical target order, failure health flags, budget accounting, reward weights, and audit field names retain their original meaning. The original implementation stays available as the behavioral reference during extraction.
 
 Status: boundary tests and differential comparisons pass. All retained evaluation transitions replay identically, and original output hashes remain unchanged. This verifies the simulator extraction within the exercised state space; controller equivalence and full experiment reproduction remain pending.
+
+## October 9, 2026 — Separate learning from policy evaluation
+
+Decision: controllers.py owns greedy selection, the fixed rule baseline, and proposed-command Q updates. training.py owns seeded exploration and learned-policy artifacts. evaluation.py runs fixed policies without exploration or table mutation. runtime.py isolates platform-dependent process memory reporting.
+
+Rationale: training changes action-value estimates, whereas evaluation measures the resulting policy. Keeping these workflows separate makes the RL learning loop and the experimental boundaries explicit.
+
+Consequence: the original random draw order, epsilon expression, sparse table insertion order, JSON format, greedy ties, and validation ranking are retained. Unseen states still select restart from zero values. No fallback controller or held-out-driven redesign is introduced. Process timing and RSS are measurements, not deterministic equivalence targets.
+
+Status: eight development cases produce byte-identical episode, curve, and policy artifacts. All 20 saved final policies reproduce the retained 420 evaluation rows and 2,832 traces without table updates. Full-budget experiment orchestration and reproduction remain pending.

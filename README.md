@@ -4,7 +4,7 @@ PhDAI-830 Part 2, Keith G. Broussard. Simulation only. No network-device, hyperv
 
 ## Incremental restructuring status
 
-A capstone-style structural refactor is being built in gated increments. The foundation is committed locally, and the commented simulator modules have passed their extraction checks. Controllers and experiment orchestration are pending. The existing commands below still run the original implementation. The submitted [Part 1 plan](docs/plan/RL_Project_Part_1_Plan_and_Design_Report_Keith_Broussard.docx), [experiment protocol](docs/experiment_protocol.md), and [implementation gates](docs/implementation_gates.md) establish the baseline. The [simulator check record](docs/simulator_validation.md) documents the current increment. No refactored experiment is claimed complete.
+A capstone-style structural refactor is being built in gated increments. The foundation and simulator increments are committed locally. Commented controller, training, and evaluation modules have passed their extraction checks; their commit is pending approval. Full experiment orchestration and demo migration are pending. The existing commands below still run the original implementation. The submitted [Part 1 plan](docs/plan/RL_Project_Part_1_Plan_and_Design_Report_Keith_Broussard.docx), [experiment protocol](docs/experiment_protocol.md), and [implementation gates](docs/implementation_gates.md) establish the baseline. The [simulator checks](docs/simulator_validation.md) and [controller checks](docs/controller_validation.md) document completed verification. No refactored experiment is claimed complete.
 
 ## Run from a clean extracted directory
 
