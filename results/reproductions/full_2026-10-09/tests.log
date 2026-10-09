@@ -1,0 +1,36 @@
+test_blocked_command_updates_proposal_not_wait (test_controllers.ControllerTests.test_blocked_command_updates_proposal_not_wait) ... ok
+test_greedy_tie_and_unique_maximum (test_controllers.ControllerTests.test_greedy_tie_and_unique_maximum) ... ok
+test_nonterminal_target_uses_future_value (test_controllers.ControllerTests.test_nonterminal_target_uses_future_value) ... ok
+test_requested_split_and_optional_traces (test_controllers.ControllerTests.test_requested_split_and_optional_traces) ... ok
+test_rule_recovers_all_heldout_starts_once (test_controllers.ControllerTests.test_rule_recovers_all_heldout_starts_once) ... ok
+test_terminal_target_ignores_future_values (test_controllers.ControllerTests.test_terminal_target_ignores_future_values) ... ok
+test_unseen_restart_failure_does_not_change_table (test_controllers.ControllerTests.test_unseen_restart_failure_does_not_change_table) ... ok
+test_validation_priority_and_score_sign (test_controllers.ControllerTests.test_validation_priority_and_score_sign) ... ok
+test_freeze_exists_before_first_heldout_evaluation (test_experiment.ExperimentTests.test_freeze_exists_before_first_heldout_evaluation) ... ok
+test_original_analysis_and_policy_checks_are_read_only (test_experiment.ExperimentTests.test_original_analysis_and_policy_checks_are_read_only) ... ok
+test_refuses_existing_run_directory (test_experiment.ExperimentTests.test_refuses_existing_run_directory) ... ok
+test_refuses_original_and_nested_destinations (test_experiment.ExperimentTests.test_refuses_original_and_nested_destinations) ... ok
+test_rejects_configuration_that_changes_fixed_model (test_experiment.ExperimentTests.test_rejects_configuration_that_changes_fixed_model) ... ok
+test_rejects_nonpositive_episode_budget (test_experiment.ExperimentTests.test_rejects_nonpositive_episode_budget) ... ok
+test_blocked_restore_updates_proposal (test_recovery.ModelTests.test_blocked_restore_updates_proposal) ... ok
+test_capacity_boundary_and_throttle_reward (test_recovery.ModelTests.test_capacity_boundary_and_throttle_reward) ... ok
+test_critical_loss_filter (test_recovery.ModelTests.test_critical_loss_filter) ... ok
+test_final_step_success_and_failure (test_recovery.ModelTests.test_final_step_success_and_failure) ... ok
+test_manifest (test_recovery.ModelTests.test_manifest) ... ok
+test_memory_migration (test_recovery.ModelTests.test_memory_migration) ... ok
+test_restore_failed_node_and_invalid_migration (test_recovery.ModelTests.test_restore_failed_node_and_invalid_migration) ... ok
+test_terminal_no_bootstrap (test_recovery.ModelTests.test_terminal_no_bootstrap) ... ok
+test_web_dependency_and_wait_reward (test_recovery.ModelTests.test_web_dependency_and_wait_reward) ... ok
+test_all_faults_in_all_splits_and_feasible_starts (test_simulator.SimulatorTests.test_all_faults_in_all_splits_and_feasible_starts) ... ok
+test_blocked_proposal_and_unshielded_execution (test_simulator.SimulatorTests.test_blocked_proposal_and_unshielded_execution) ... ok
+test_capacity_equality_and_throttle (test_simulator.SimulatorTests.test_capacity_equality_and_throttle) ... ok
+test_dependency_and_wait_cost (test_simulator.SimulatorTests.test_dependency_and_wait_cost) ... ok
+test_failed_node_restore_and_invalid_migration (test_simulator.SimulatorTests.test_failed_node_restore_and_invalid_migration) ... ok
+test_last_command_success_and_budget_exhaustion (test_simulator.SimulatorTests.test_last_command_success_and_budget_exhaustion) ... ok
+test_memory_overload_requires_placement_change (test_simulator.SimulatorTests.test_memory_overload_requires_placement_change) ... ok
+test_preserves_available_critical_service (test_simulator.SimulatorTests.test_preserves_available_critical_service) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.037s
+
+OK

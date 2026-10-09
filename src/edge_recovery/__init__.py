@@ -1,6 +1,6 @@
-"""Simulation-only edge recovery package built in separate increments.
+"""Simulation-only edge recovery with tabular learning and fixed-policy evaluation.
 
-The simulator, controllers, training, and evaluation modules are implemented.
-Full experiment orchestration and demo migration are pending. Importing this
-package does not run an experiment or change outputs.
+The package separates physical execution, filtering, controllers, training,
+evaluation, experiment orchestration, and evidence checks. Importing it does
+not run an experiment or change outputs.
 """

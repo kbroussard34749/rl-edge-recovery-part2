@@ -34,3 +34,7 @@ The extracted modules retain the learning and evaluation behavior described in s
 ## Evidence path relocation
 
 Every old outputs/ path maps to results/original_run/ with the remainder unchanged. The original config.json maps to config/experiment.json; scenarios.json maps to config/scenarios.json. Original slide source labels remain historical paths until a later presentation revision. The edited v3 was not changed. Compatibility demo commands now read relocated policies through the modular implementation.
+
+## Full reproduction alignment
+
+The completed isolated reproduction matches all scientific evidence supporting slides 8–11 and the saved policies used by slide 12. The original presentation figures remain valid for the retained original run. Thirty-one current implementation tests are additional refactor checks, separate from the nine tests reported for the original study. Timing and memory for a new execution must not be substituted into the presentation as original measurements. visual_plan.md supplies source-backed candidate diagrams/charts and placement options; the edited v3 remains unchanged.

@@ -2,7 +2,7 @@
 
 Keith G. Broussard · PhDAI-830 · Professor Atif Farid Mohammad
 
-This simulation compares filtered Q-learning, unshielded Q-learning, and a deterministic rule controller. The [submitted Part 1 plan](docs/plan/RL_Project_Part_1_Plan_and_Design_Report_Keith_Broussard.docx) controls the design. The original October 9 experiment is retained unchanged; an incremental refactor separates its implementation into commented modules.
+This simulation compares filtered Q-learning, unshielded Q-learning, and a deterministic rule controller. The [submitted Part 1 plan](docs/plan/RL_Project_Part_1_Plan_and_Design_Report_Keith_Broussard.docx) controls the design. The original October 9 experiment is retained unchanged; an incremental refactor separates its implementation into commented modules. Experiment orchestration, evidence relocation, and the full isolated reproduction are complete and verified.
 
 ## Structure
 
@@ -46,6 +46,8 @@ python3 scripts/analyze_results.py --run-dir results/reproductions/my_full_run -
 python3 scripts/verify_policy.py --run-dir results/reproductions/my_full_run --write
 ```
 
+The verified [October 9 reproduction](docs/full_reproduction_validation.md) is retained at results/reproductions/full_2026-10-09/ and matches the original scientific evidence.
+
 The command runs the two 1,000-episode pilots and all 800,000 planned training episodes. It validates 24 starts, tunes alpha on four validation starts using five seeds per candidate and condition, saves selected settings, then trains ten fresh final seeds per learner. Evaluation uses eight held-out starts plus a separate twelve-start training diagnostic. The rule controller runs once per configuration.
 
 The command refuses existing output directories and destinations inside the retained original run. A smaller --episodes value is development only and is identified as such in run_identity.json. It is not the full planned budget. Each new run includes config/scenario snapshots, policy and episode files, evaluation traces, provenance, and source hashes.
@@ -68,11 +70,19 @@ Open http://127.0.0.1:8765. The server binds only to this computer; stop with Ct
 
 State contains node health, fixed background demand, service placement/running status, batch throttling, and remaining budget. Web depends on the database. The simulator targets physically nonoperational database, then web, then batch. Invalid commands consume a step. Failed nodes remain failed; restore assumes recoverable data elsewhere. Interventions are instantaneous.
 
-Reward is −1−10Uc−2Ub−B−I−5P−20F. The fixed filter converts executable capacity/critical-loss proposals to wait. The learner updates the proposed command using the actual outcome. Terminal updates bootstrap zero.
+The step reward is:
+
+$$
+r = -1 - 10U_c - 2U_b - B - I - 5P - 20F
+$$
+
+Here, $U_c$ counts unavailable critical services; $U_b$ indicates unavailable batch; $B$ indicates operational throttled batch; $I$ is the executed intervention cost; $P$ indicates a prohibited proposal; and $F$ indicates unsuccessful budget exhaustion. Availability is measured after the command.
+
+The fixed filter converts executable capacity/critical-loss proposals to wait. The learner updates the proposed command using the actual outcome. Terminal updates bootstrap zero.
 
 The original learners recover 100% of training starts and 2/8 held-out starts per seed (25%). The rule controller recovers 8/8 held-out starts (100%). Held-out learner decisions use unseen exact states; zero values with fixed ties choose restart. No final evaluation executes prohibited actions, so the experiment does not establish filter superiority. Seed SD zero does not remove uncertainty from eight hand-designed held-out configurations. Training curves do not establish convergence.
 
-The [protocol](docs/experiment_protocol.md), [technical decisions](docs/decisions.md), [presentation alignment](docs/presentation_alignment.md), and [verification records](docs/implementation_gates.md) distinguish the original study from later extraction checks and reproduction. Scholarly sources are in [references](docs/references.md).
+The [protocol](docs/experiment_protocol.md), [technical decisions](docs/decisions.md), [presentation alignment](docs/presentation_alignment.md), and [verification records](docs/implementation_gates.md) distinguish the original study from later extraction checks and reproduction. Scholarly sources are in [references](docs/references.md). The [visual plan](docs/visual_plan.md) maps workflow diagrams, evidence charts, trace storyboards, and conclusions to a possible presentation revision.
 
 ## AI assistance and access
 

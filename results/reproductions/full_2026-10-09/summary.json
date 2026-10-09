@@ -1,0 +1,326 @@
+[
+  {
+    "controller": "filtered",
+    "split": "test",
+    "seeds": 10,
+    "configurations_per_seed": 8,
+    "success_rate": {
+      "mean": 0.25,
+      "sd": 0.0,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "steps_mean": {
+      "mean": 15.25,
+      "sd": 0.0,
+      "min": 15.25,
+      "max": 15.25
+    },
+    "return_value_mean": {
+      "mean": -360.5,
+      "sd": 0.0,
+      "min": -360.5,
+      "max": -360.5
+    },
+    "critical_unavailable_mean": {
+      "mean": 30.0,
+      "sd": 0.0,
+      "min": 30.0,
+      "max": 30.0
+    },
+    "violations_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prohibited_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unseen_fraction": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "filter_intervention_rate": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  {
+    "controller": "filtered",
+    "split": "train",
+    "seeds": 10,
+    "configurations_per_seed": 12,
+    "success_rate": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steps_mean": {
+      "mean": 1.5083333333333333,
+      "sd": 0.02635231383473647,
+      "min": 1.5,
+      "max": 1.5833333333333333
+    },
+    "return_value_mean": {
+      "mean": -8.941666666666666,
+      "sd": 0.07905694150420949,
+      "min": -9.166666666666666,
+      "max": -8.916666666666666
+    },
+    "critical_unavailable_mean": {
+      "mean": 0.25,
+      "sd": 0.0,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "violations_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prohibited_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unseen_fraction": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "filter_intervention_rate": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  {
+    "controller": "rule",
+    "split": "test",
+    "seeds": 1,
+    "configurations_per_seed": 8,
+    "success_rate": {
+      "mean": 1.0,
+      "sd": null,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steps_mean": {
+      "mean": 1.5,
+      "sd": null,
+      "min": 1.5,
+      "max": 1.5
+    },
+    "return_value_mean": {
+      "mean": -9.0,
+      "sd": null,
+      "min": -9.0,
+      "max": -9.0
+    },
+    "critical_unavailable_mean": {
+      "mean": 0.25,
+      "sd": null,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "violations_mean": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prohibited_mean": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unseen_fraction": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "filter_intervention_rate": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  {
+    "controller": "rule",
+    "split": "train",
+    "seeds": 1,
+    "configurations_per_seed": 12,
+    "success_rate": {
+      "mean": 1.0,
+      "sd": null,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steps_mean": {
+      "mean": 1.5,
+      "sd": null,
+      "min": 1.5,
+      "max": 1.5
+    },
+    "return_value_mean": {
+      "mean": -8.916666666666666,
+      "sd": null,
+      "min": -8.916666666666666,
+      "max": -8.916666666666666
+    },
+    "critical_unavailable_mean": {
+      "mean": 0.25,
+      "sd": null,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "violations_mean": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prohibited_mean": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unseen_fraction": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "filter_intervention_rate": {
+      "mean": 0.0,
+      "sd": null,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  {
+    "controller": "unshielded",
+    "split": "test",
+    "seeds": 10,
+    "configurations_per_seed": 8,
+    "success_rate": {
+      "mean": 0.25,
+      "sd": 0.0,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "steps_mean": {
+      "mean": 15.25,
+      "sd": 0.0,
+      "min": 15.25,
+      "max": 15.25
+    },
+    "return_value_mean": {
+      "mean": -360.5,
+      "sd": 0.0,
+      "min": -360.5,
+      "max": -360.5
+    },
+    "critical_unavailable_mean": {
+      "mean": 30.0,
+      "sd": 0.0,
+      "min": 30.0,
+      "max": 30.0
+    },
+    "violations_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prohibited_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unseen_fraction": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "filter_intervention_rate": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  {
+    "controller": "unshielded",
+    "split": "train",
+    "seeds": 10,
+    "configurations_per_seed": 12,
+    "success_rate": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "steps_mean": {
+      "mean": 1.5083333333333333,
+      "sd": 0.02635231383473647,
+      "min": 1.5,
+      "max": 1.5833333333333333
+    },
+    "return_value_mean": {
+      "mean": -8.941666666666666,
+      "sd": 0.07905694150420949,
+      "min": -9.166666666666666,
+      "max": -8.916666666666666
+    },
+    "critical_unavailable_mean": {
+      "mean": 0.25,
+      "sd": 0.0,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "violations_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prohibited_mean": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "unseen_fraction": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "filter_intervention_rate": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "objective_scope": [
+    "current code committed",
+    "experiment orchestration committed",
+    "evidence relocation committed",
+    "full isolated reproduction verified and approved for commit"
+  ],
+  "full_reproduction_verified": true,
+  "exact_scientific_artifacts_match": true,
+  "source_hashes_match_execution": true,
+  "original_outputs_preserved": 187,
+  "submitted_plan_preserved": true,
+  "presentation_matches_foundation_reference": true,
+  "readme_equation_present": true,
+  "visual_plan_present": true,
+  "test_log_verified": true,
+  "documentation_links_verified": true,
+  "ignored_local_controls_excluded": true,
+  "remote_push_performed": false
+}

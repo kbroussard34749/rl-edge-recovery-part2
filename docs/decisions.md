@@ -70,7 +70,7 @@ Rationale: rerunning an experiment must not replace the evidence used in the pre
 
 Consequence: existing output destinations are rejected, including nested paths inside the original run. Each new run retains configuration snapshots and a source-hash identity record. Development budgets are identified separately from full reproduction. Episode and trace summaries retain their original serialization.
 
-Status: 31 tests pass. Read-only modular analysis and policy verification reproduce all five original JSON check/summary records. Full-budget execution is pending evidence relocation.
+Status: 31 tests pass. Read-only modular analysis and policy verification reproduce all five original JSON check/summary records. Full-budget execution is now verified after evidence relocation.
 
 ## October 9, 2026 — Canonical evidence paths and compatibility entry points
 
@@ -80,4 +80,14 @@ Rationale: one canonical original-evidence directory prevents competing result c
 
 Consequence: every moved original artifact retains its hash. Compatibility demo commands read relocated policies; experiment commands require new output destinations. The source package and CLI scripts use explicit checkout paths. pyproject.toml describes a dependency-free Python 3.12 package; source commands do not require installation.
 
-Status: all 187 original output files and both design files match their original hashes after relocation. All 31 tests and both extraction-comparison scripts pass with the new paths. Full reproduction is the next verification stage.
+Status: all 187 original output files and both design files match their original hashes after relocation. All 31 tests and both extraction-comparison scripts pass with the new paths. Full reproduction now matches the original scientific evidence.
+
+## October 9, 2026 — Verify the complete experiment against retained artifacts
+
+Decision: reproduce the full frozen experiment under Python 3.12.14 and compare policies, episode histories, curves, selection, final evaluation, and analysis rather than only aggregate success rates.
+
+Rationale: a refactor can preserve headline outcomes while changing random draw order, updates, or intermediate behavior. Complete deterministic-artifact comparison provides stronger evidence of preserved implementation behavior.
+
+Consequence: 136 scientific files and both design snapshots must match exactly. Training, pilot and provenance records are compared on scientific fields; execution time and cumulative process RSS remain separately reported measurements. Run identity hashes refer to the executed package source. Package-level comments describe responsibilities rather than temporary build status.
+
+Status: all 42 model runs reproduce; the 800,000-episode training budget and 2,000 pilot episodes are complete. Both learners select alpha .1. All 420 final evaluation rows and 2,832 traces match. Original output hashes remain unchanged. Reproduction time and memory differences are recorded without implying performance improvement.

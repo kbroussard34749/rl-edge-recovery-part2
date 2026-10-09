@@ -9,7 +9,7 @@ This is the current implementation record, not a reconstruction of earlier appro
 | 1. Foundation | Baseline plan, package foundation, gate policy, protocol, evidence inventory, presentation map | Original source hashes; copied-plan identity; existing implementation unchanged | Committed locally: be7a681 |
 | 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Committed locally: c4c50f0 |
 | 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Committed locally: bcdfdf7 |
-| 4. Experiment | Orchestration, configuration, isolated reproduction, analysis and policy verification | Full planned run and artifact comparisons | Not started |
+| 4. Experiment | Orchestration, configuration, isolated reproduction, analysis and policy verification | Full planned run and artifact comparisons | Orchestration 3e56ca0; relocation ac23ec6; reproduction verified and approved for commit |
 | 5. Demonstration | Local demo, boundary fixture, run instructions, final presentation path alignment | Actual demo cases and final code/evidence consistency | Not started |
 | 6. Release | Approved cumulative changes, package and remote | Clean extraction checks, contents and access status | Not started |
 
@@ -62,3 +62,13 @@ Within the granted pre/post approval, relocated all 187 original outputs with ma
 Commit scope: tracked output/config/reference moves, compatibility commands, paths, comparison scripts and check records, package metadata, folder instructions, and technical documentation. AGENTS.md, .idea/, private course attachments, and editable slides remain excluded.
 
 Commit: `Relocate original evidence and connect canonical repository paths`.
+
+## Full reproduction check-in — October 9, 2026
+
+Pre/post approval covers this completed increment. Canonical execution uses Python 3.12.14 and the final package source. All 42 models, 800,000 training episodes and 2,000 pilot episodes completed. Comparison proves 136 exact scientific-artifact matches plus both design snapshots. Scientific metadata fields match; time and process memory are recorded separately. All 31 tests pass. The run includes actual execution, analysis, and test logs. The two additional completed execution records are preserved in the adjacent private build directory as described in full_reproduction_validation.md.
+
+Commit scope: full isolated reproduction artifacts, reproduction verifier, final package-purpose comment, verification report, gate/technical records, README equation and updated instructions, and the source-backed visual plan requested during this work. The visual plan does not change the presentation.
+
+Commit: `Verify full isolated reproduction and record presentation visuals`.
+
+No push, instructor access change, ZIP replacement, deck edit, recording, or LMS submission is included. Dedicated demo-module restructuring and release remain later increments.

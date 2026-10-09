@@ -1,0 +1,55 @@
+{
+  "config": {
+    "episodes": 20000,
+    "gamma": 0.95,
+    "alphas": [
+      0.1,
+      0.3
+    ],
+    "tuning_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "final_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009
+    ],
+    "epsilon_initial": 1.0,
+    "epsilon_final": 0.1,
+    "decay_fraction": 0.8,
+    "budget": 20,
+    "capacity": 10,
+    "tie_break": [
+      "restart",
+      "throttle_batch",
+      "migrate_N1",
+      "migrate_N2",
+      "migrate_N3",
+      "restore_N1",
+      "restore_N2",
+      "restore_N3",
+      "wait"
+    ],
+    "rng": "Python random.Random",
+    "state": "exact tuple including remaining budget",
+    "heldout_tuning": false
+  },
+  "selection": {
+    "unshielded": 0.1,
+    "filtered": 0.1
+  },
+  "scenario_sha256": "374cfe295092311ae894e9931d6c4e99703237430bac89e9913d850609953495",
+  "selection_rule": "mean success, then lower critical outage, then return; alpha .1 wins exact tie",
+  "frozen_before_test": true
+}

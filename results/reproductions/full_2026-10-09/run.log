@@ -1,0 +1,42 @@
+PILOT [{"controller": "unshielded", "seed": 7, "alpha": 0.1, "filtered": false, "episodes": 1000, "seconds": 0.039991917001316324, "q_states": 549, "nonzero_pairs": 2762, "process_peak_rss_bytes": 34340864}, {"controller": "filtered", "seed": 7, "alpha": 0.1, "filtered": true, "episodes": 1000, "seconds": 0.027211917000386165, "q_states": 549, "nonzero_pairs": 2762, "process_peak_rss_bytes": 36388864}]
+TUNED unshielded 0.1 100 0.19
+TUNED unshielded 0.1 101 0.17
+TUNED unshielded 0.1 102 0.17
+TUNED unshielded 0.1 103 0.17
+TUNED unshielded 0.1 104 0.17
+TUNED unshielded 0.3 100 0.24
+TUNED unshielded 0.3 101 0.15
+TUNED unshielded 0.3 102 0.16
+TUNED unshielded 0.3 103 0.15
+TUNED unshielded 0.3 104 0.16
+TUNED filtered 0.1 100 0.18
+TUNED filtered 0.1 101 0.17
+TUNED filtered 0.1 102 0.17
+TUNED filtered 0.1 103 0.21
+TUNED filtered 0.1 104 0.18
+TUNED filtered 0.3 100 0.16
+TUNED filtered 0.3 101 0.16
+TUNED filtered 0.3 102 0.16
+TUNED filtered 0.3 103 0.16
+TUNED filtered 0.3 104 0.16
+FINAL unshielded 1000 0.17
+FINAL unshielded 1001 0.17
+FINAL unshielded 1002 0.17
+FINAL unshielded 1003 0.16
+FINAL unshielded 1004 0.17
+FINAL unshielded 1005 0.17
+FINAL unshielded 1006 0.17
+FINAL unshielded 1007 0.17
+FINAL unshielded 1008 0.17
+FINAL unshielded 1009 0.17
+FINAL filtered 1000 0.17
+FINAL filtered 1001 0.17
+FINAL filtered 1002 0.17
+FINAL filtered 1003 0.17
+FINAL filtered 1004 0.17
+FINAL filtered 1005 0.17
+FINAL filtered 1006 0.16
+FINAL filtered 1007 0.17
+FINAL filtered 1008 0.17
+FINAL filtered 1009 0.17
+COMPLETE {"python": "3.12.14", "platform": "macOS-27.0.1-arm64-arm-64bit", "total_seconds": 6.987297916999523, "total_planned_training_episodes": 800000, "pilot_episodes": 2000, "process_peak_rss": 51494912, "peak_memory_scope": "whole experiment process including transition caches; not isolated per learner", "submission_performed": false, "publication_performed": false}

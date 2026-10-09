@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "run_kind": "full_reproduction",
+  "source_sha256": {
+    "src/edge_recovery/__init__.py": "dca3a2554b55590dec785b02c530e2562560c0ecb26500aa4f810277f1e89765",
+    "src/edge_recovery/controllers.py": "6ee68df2a0d08ae6373fdfdd218121f69ad4da859977391b69655e009455bd3e",
+    "src/edge_recovery/environment.py": "f27c34a41082ccadd37ffaed25efebe54c0f30f05e709b1c26cbb39273542895",
+    "src/edge_recovery/evaluation.py": "01d2f006fbea9e3c657f9f32911684dc60e184d9b77338246a9e704625403d2d",
+    "src/edge_recovery/evidence.py": "de77c4dfb055da0b7b7dea9361c8ce941b7d98844cd4a79c7b0c88872440c9e2",
+    "src/edge_recovery/experiment.py": "15386f0b2eb15f484a0cee8d1bc5759fccc23514c40e5096218f3fdc14aada8b",
+    "src/edge_recovery/paths.py": "ed0e0b669c7b7e234a32404acaec141cc769a43947dfb01c8de4ce2340b534ae",
+    "src/edge_recovery/policy_verification.py": "0057f3e1719d11b12aec5bca4a8a7317cccb69d788bcda733650a4208e8cfac4",
+    "src/edge_recovery/runtime.py": "1ce03ecc91eddf7c56dadfa92da91e04f703734a296909c7638738c27038950a",
+    "src/edge_recovery/safety_filter.py": "44c6f749636c979010158b4cd09a8126572d1e2660681be1491e835f206dc422",
+    "src/edge_recovery/scenarios.py": "43d176e0cb5a0c34ded192a59b47cd6fac15a7aa1ef0737b1a68148687b54361",
+    "src/edge_recovery/training.py": "9974f766d1eb15fad2d3a06cf081d09cbc1572104d5b487e07f1ba887a9fd2a7"
+  },
+  "config_sha256": "d4705d288f774f3a3dcef60eb31d23ecaf39fe4732d17a12747d91c9baed2d1a",
+  "scenario_sha256": "374cfe295092311ae894e9931d6c4e99703237430bac89e9913d850609953495"
+}
