@@ -16,7 +16,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
-import recovery as original
+sys.path.insert(0, str(ROOT / "tests/reference"))
+import recovery_reference as original
 from edge_recovery import environment as model
 from edge_recovery.safety_filter import step
 from edge_recovery.scenarios import feasible, manifest, state_from
@@ -42,15 +43,15 @@ def verify():
         entry["sha256"] for entry in baseline["tracked_reference_files"]
         if entry["path"] == "recovery.py"
     )
-    assert digest(ROOT / "recovery.py") == original_hash, "Reference code changed"
+    assert digest(ROOT / "tests/reference/recovery_reference.py") == original_hash, "Reference code changed"
     assert model.ACTIONS == original.ACTIONS
     assert model.DEMAND == original.DEMAND
     scenarios = manifest()
     assert scenarios == original.manifest()
     # JSON serialization also checks retained ordering and representation.
-    assert json.dumps(scenarios, indent=2) == (ROOT / "scenarios.json").read_text()
+    assert json.dumps(scenarios, indent=2) == (ROOT / "config/scenarios.json").read_text()
     audits = [dict(id=x["id"], **feasible(state_from(x["initial"]))) for x in scenarios]
-    assert audits == json.loads((ROOT / "outputs/scenario_validation.json").read_text())
+    assert audits == json.loads((ROOT / "results/original_run/scenario_validation.json").read_text())
 
     # Explore physical states reachable under either condition, including unsafe
     # unshielded candidates. Budget variants exercise normal and final commands.
@@ -98,7 +99,7 @@ def verify():
                             queue.append(after)
 
     trace_checks = 0
-    with (ROOT / "outputs/traces.jsonl").open() as stream:
+    with (ROOT / "results/original_run/traces.jsonl").open() as stream:
         for line in stream:
             row = json.loads(line)
             state = state_from(row["state"])
@@ -116,7 +117,7 @@ def verify():
         entry for entry in baseline["tracked_reference_files"]
         if entry["path"].startswith("outputs/")
     ]
-    assert all(digest(ROOT / entry["path"]) == entry["sha256"] for entry in retained)
+    assert all(digest(ROOT / entry["path"].replace("outputs/", "results/original_run/", 1)) == entry["sha256"] for entry in retained)
     checked_source = [
         "src/edge_recovery/environment.py", "src/edge_recovery/safety_filter.py",
         "src/edge_recovery/scenarios.py", "tests/test_simulator.py",

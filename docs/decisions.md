@@ -71,3 +71,13 @@ Rationale: rerunning an experiment must not replace the evidence used in the pre
 Consequence: existing output destinations are rejected, including nested paths inside the original run. Each new run retains configuration snapshots and a source-hash identity record. Development budgets are identified separately from full reproduction. Episode and trace summaries retain their original serialization.
 
 Status: 31 tests pass. Read-only modular analysis and policy verification reproduce all five original JSON check/summary records. Full-budget execution is pending evidence relocation.
+
+## October 9, 2026 — Canonical evidence paths and compatibility entry points
+
+Decision: relocate original outputs to results/original_run/, place design files in config/, preserve the original implementation in tests/reference/, and make root commands thin compatibility entry points to modular code.
+
+Rationale: one canonical original-evidence directory prevents competing result copies. Comparison scripts need a frozen source reference that does not accidentally resolve to the new implementation.
+
+Consequence: every moved original artifact retains its hash. Compatibility demo commands read relocated policies; experiment commands require new output destinations. The source package and CLI scripts use explicit checkout paths. pyproject.toml describes a dependency-free Python 3.12 package; source commands do not require installation.
+
+Status: all 187 original output files and both design files match their original hashes after relocation. All 31 tests and both extraction-comparison scripts pass with the new paths. Full reproduction is the next verification stage.

@@ -119,6 +119,6 @@
     "src/edge_recovery/evaluation.py": "01d2f006fbea9e3c657f9f32911684dc60e184d9b77338246a9e704625403d2d",
     "src/edge_recovery/runtime.py": "1ce03ecc91eddf7c56dadfa92da91e04f703734a296909c7638738c27038950a",
     "tests/test_controllers.py": "b740854ce533f53e2657cc4ccb7076ad88fe185be1a09996410a6f488f920d1b",
-    "scripts/verify_controller_equivalence.py": "b0421195fa66493a692de6c862681b40e553ba364cf6cc008b19ea215ed2ff1d"
+    "scripts/verify_controller_equivalence.py": "709c6df92a35ab738d20e2892dcf1438d7e78d0d1086be1e8da79b678a360a28"
   }
 }

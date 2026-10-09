@@ -17,7 +17,8 @@ from tempfile import TemporaryDirectory
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
-import recovery as original
+sys.path.insert(0, str(ROOT / "tests/reference"))
+import recovery_reference as original
 from edge_recovery.controllers import rule
 from edge_recovery.evaluation import evaluate, score
 from edge_recovery.scenarios import manifest, state_from
@@ -41,7 +42,7 @@ def verify():
     expected_hash = next(
         x["sha256"] for x in baseline["tracked_reference_files"] if x["path"] == "recovery.py"
     )
-    assert digest(ROOT / "recovery.py") == expected_hash
+    assert digest(ROOT / "tests/reference/recovery_reference.py") == expected_hash
     scenarios = manifest()
     runs = []
     # 601 episodes include full 200-episode bins and a final partial interval.
@@ -81,7 +82,7 @@ def verify():
     validation_score_checks = 0
     for controller in ("unshielded", "filtered"):
         for seed in range(1000, 1010):
-            path = ROOT / "outputs/final" / controller / str(seed) / "policy.json"
+            path = ROOT / "results/original_run/final" / controller / str(seed) / "policy.json"
             q = read_policy(path, state_from)
             reference_q = read_policy(path, original.state_from)
             # Evaluation must leave every saved value and table key untouched.
@@ -109,7 +110,7 @@ def verify():
         all_rows.extend(rows)
         all_traces.extend(traces)
 
-    with (ROOT / "outputs/evaluation.csv").open(newline="") as stream:
+    with (ROOT / "results/original_run/evaluation.csv").open(newline="") as stream:
         retained_rows = list(csv.DictReader(stream))
     normalized_rows = [
         {key: "" if value is None else str(value) for key, value in row.items()}
@@ -117,7 +118,7 @@ def verify():
     ]
     assert normalized_rows == retained_rows
     rendered_traces = "".join(json.dumps(row) + "\n" for row in all_traces)
-    assert rendered_traces == (ROOT / "outputs/traces.jsonl").read_text()
+    assert rendered_traces == (ROOT / "results/original_run/traces.jsonl").read_text()
     # Test rule action selection on every retained decision state, not only the
     # decisions originally assigned to the deterministic baseline.
     rule_checks = 0
@@ -127,7 +128,7 @@ def verify():
         rule_checks += 1
 
     retained = [x for x in baseline["tracked_reference_files"] if x["path"].startswith("outputs/")]
-    assert all(digest(ROOT / x["path"]) == x["sha256"] for x in retained)
+    assert all(digest(ROOT / x["path"].replace("outputs/", "results/original_run/", 1)) == x["sha256"] for x in retained)
     source = [
         "src/edge_recovery/controllers.py", "src/edge_recovery/training.py",
         "src/edge_recovery/evaluation.py", "src/edge_recovery/runtime.py",

@@ -14,7 +14,7 @@ class Handler(BaseHTTPRequestHandler):
             if c not in ('filtered','unshielded','rule'): self.send_error(400); return
             scenario=next((x for x in r.manifest() if x['id']==sid),None)
             if scenario is None: self.send_error(400); return
-            q={} if c=='rule' else {r.state_from(x['state']):x['values'] for x in json.loads((r.ROOT/'outputs'/'final'/c/'1000'/'policy.json').read_text())}
+            q={} if c=='rule' else {r.state_from(x['state']):x['values'] for x in json.loads((r.ORIGINAL_RUN/'final'/c/'1000'/'policy.json').read_text())}
             rows,ts=r.evaluate(q,[scenario],c,1000,scenario['split'])
             for t in ts:
                 s=r.state_from(t['next_state']); t['loads']=r.loads(s); t['availability']=r.available(s);t['seen']=c=='rule' or r.state_from(t['state']) in q

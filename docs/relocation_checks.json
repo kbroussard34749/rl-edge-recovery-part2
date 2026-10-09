@@ -1,0 +1,963 @@
+{
+  "original_output_files_moved": 187,
+  "all_original_output_hashes_match": true,
+  "config_and_scenario_hashes_match": true,
+  "reference_code_hash": "9619a6aeb74a5fa7b4814a858762c1b3c9703d9ecc782a14e73fb623469b8636",
+  "path_map": [
+    {
+      "old_path": "outputs/analysis.log",
+      "new_path": "results/original_run/analysis.log",
+      "sha256": "9256a26d35b1b1cae8c92e38614de6c906e6114a1daca12bd0b695174e73a996"
+    },
+    {
+      "old_path": "outputs/boundary_demo.json.txt",
+      "new_path": "results/original_run/boundary_demo.json.txt",
+      "sha256": "21ecc469b54364ebddbb85495f97df8495131d5480801799c88203e6f5e13785"
+    },
+    {
+      "old_path": "outputs/demo_heldout_failure.txt",
+      "new_path": "results/original_run/demo_heldout_failure.txt",
+      "sha256": "3b46b805a68adb370849b6c8550dae4000723889f3fda42b0d677d134ef3c16e"
+    },
+    {
+      "old_path": "outputs/demo_learned_training.txt",
+      "new_path": "results/original_run/demo_learned_training.txt",
+      "sha256": "eebfe9618d78d9bdaeeea60e73f53c5c1eec7733f4141b11d0a42f8a9c4af6ef"
+    },
+    {
+      "old_path": "outputs/demo_rule_comparison.txt",
+      "new_path": "results/original_run/demo_rule_comparison.txt",
+      "sha256": "c2e3f6dee590c31a35319e1a277f20b8fe48925b215fd4dfc515e05068546a6d"
+    },
+    {
+      "old_path": "outputs/evaluation.csv",
+      "new_path": "results/original_run/evaluation.csv",
+      "sha256": "1ed3e84faade56b3ff4e5c88df102f11799f2e9ac1d49902f9154e29a4dbc4b9"
+    },
+    {
+      "old_path": "outputs/evidence_checks.json",
+      "new_path": "results/original_run/evidence_checks.json",
+      "sha256": "9f4708e2cdcd17ea3f97b2b2e6014c4b0545b6cc94935db5b5d0079f1f4baa16"
+    },
+    {
+      "old_path": "outputs/final/filtered/1000/curve.json",
+      "new_path": "results/original_run/final/filtered/1000/curve.json",
+      "sha256": "b3813dfe168fbaba43b90556737ca02142c4cc0241cbcf1438a08471a25145d7"
+    },
+    {
+      "old_path": "outputs/final/filtered/1000/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1000/episodes.csv",
+      "sha256": "93f2ba14dd1d4fa6ddb4ba583919dd13ac499f232f1dcb3600a154a7e13ef43c"
+    },
+    {
+      "old_path": "outputs/final/filtered/1000/policy.json",
+      "new_path": "results/original_run/final/filtered/1000/policy.json",
+      "sha256": "cf8c690c69f223bf6f57930f59be067f3ce4a7f0ed4453fa0e377b34a0faec1f"
+    },
+    {
+      "old_path": "outputs/final/filtered/1000/training.json",
+      "new_path": "results/original_run/final/filtered/1000/training.json",
+      "sha256": "8e2480aec1a65ac0d18adc017657b5d27c335c9b157d9157c1b888ec3bc0c4ad"
+    },
+    {
+      "old_path": "outputs/final/filtered/1001/curve.json",
+      "new_path": "results/original_run/final/filtered/1001/curve.json",
+      "sha256": "305ededf260a33953b65f04f84e353d155f0d8b43f824566b0a0e3a11be58d64"
+    },
+    {
+      "old_path": "outputs/final/filtered/1001/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1001/episodes.csv",
+      "sha256": "7cd5f7a124b7be336dbe680fae42e73a545f483df0ef1638e74e603263c34cae"
+    },
+    {
+      "old_path": "outputs/final/filtered/1001/policy.json",
+      "new_path": "results/original_run/final/filtered/1001/policy.json",
+      "sha256": "352184fa5fb6cc3affe7ea4469fca0e65a0065fa6bb28b53af12ffdb27b40aba"
+    },
+    {
+      "old_path": "outputs/final/filtered/1001/training.json",
+      "new_path": "results/original_run/final/filtered/1001/training.json",
+      "sha256": "ded97fb910b829f5ba7cebde381aaeaacc8c5f6298c2567e2a7c6596489aec62"
+    },
+    {
+      "old_path": "outputs/final/filtered/1002/curve.json",
+      "new_path": "results/original_run/final/filtered/1002/curve.json",
+      "sha256": "2ce82016e1ea29e4983f2839ce0903cdcbd92cb3ddab4cafb016320d0cc5fbfa"
+    },
+    {
+      "old_path": "outputs/final/filtered/1002/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1002/episodes.csv",
+      "sha256": "0fc5971af733a2004aed0ee54382d11314e786aa711c7cb59ed94977ebcecc53"
+    },
+    {
+      "old_path": "outputs/final/filtered/1002/policy.json",
+      "new_path": "results/original_run/final/filtered/1002/policy.json",
+      "sha256": "5204527d075d6c0b9e1fd02bae19c691200861fb97dc61c631689e5af789a1e7"
+    },
+    {
+      "old_path": "outputs/final/filtered/1002/training.json",
+      "new_path": "results/original_run/final/filtered/1002/training.json",
+      "sha256": "88b05d7700905d471374a1d35cf8295d4881e9e00717676fb534e770aa0c5b8b"
+    },
+    {
+      "old_path": "outputs/final/filtered/1003/curve.json",
+      "new_path": "results/original_run/final/filtered/1003/curve.json",
+      "sha256": "b80d5e3952c96952f989cad3f982a9eea93e488d3e335eebe3d6e8b6ca3fae35"
+    },
+    {
+      "old_path": "outputs/final/filtered/1003/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1003/episodes.csv",
+      "sha256": "cf9446402d0b5925fdd2fe6137d44b67b926fefb7ed512a202467ce46bf19a7f"
+    },
+    {
+      "old_path": "outputs/final/filtered/1003/policy.json",
+      "new_path": "results/original_run/final/filtered/1003/policy.json",
+      "sha256": "d6719d5991642e6474aec9ed6357503c5a0671f776dcafd1b6202f471a892d53"
+    },
+    {
+      "old_path": "outputs/final/filtered/1003/training.json",
+      "new_path": "results/original_run/final/filtered/1003/training.json",
+      "sha256": "f2b1a27e1ae1c7aab53f43d27b2675968ecd15a0cdadeaf550e898a31cb85983"
+    },
+    {
+      "old_path": "outputs/final/filtered/1004/curve.json",
+      "new_path": "results/original_run/final/filtered/1004/curve.json",
+      "sha256": "bd589b1e7f134f3d5bff87b3c77d70c9c2425c1e03119770990cea02909516b5"
+    },
+    {
+      "old_path": "outputs/final/filtered/1004/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1004/episodes.csv",
+      "sha256": "748ca5ba04e367b8e548c9690261a8d3ef134f0275147778e569d3df75132c81"
+    },
+    {
+      "old_path": "outputs/final/filtered/1004/policy.json",
+      "new_path": "results/original_run/final/filtered/1004/policy.json",
+      "sha256": "ca314d6f519519386ec146047524e5a4597ddf3d9c8842a4e49d5917f3d8af80"
+    },
+    {
+      "old_path": "outputs/final/filtered/1004/training.json",
+      "new_path": "results/original_run/final/filtered/1004/training.json",
+      "sha256": "2d990106660df182c319ae792862ac631e3ba370e8cb8172b93ab33807c15925"
+    },
+    {
+      "old_path": "outputs/final/filtered/1005/curve.json",
+      "new_path": "results/original_run/final/filtered/1005/curve.json",
+      "sha256": "29babeb658ce8150a0de28bafe31e2e58025c07f7db82e532b2cc9a6f07b92f9"
+    },
+    {
+      "old_path": "outputs/final/filtered/1005/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1005/episodes.csv",
+      "sha256": "fb9080a083f0fe8699acf91bf869cb393094ae6a849f5fe2adfa7a7804f37cc4"
+    },
+    {
+      "old_path": "outputs/final/filtered/1005/policy.json",
+      "new_path": "results/original_run/final/filtered/1005/policy.json",
+      "sha256": "e0262e7ef34242132bcfc9e8265223f93e75867b825f862c4b9a433752703d92"
+    },
+    {
+      "old_path": "outputs/final/filtered/1005/training.json",
+      "new_path": "results/original_run/final/filtered/1005/training.json",
+      "sha256": "71658728deaca010ebc6ed5e4d44b0051fd7fec50c30eeb656187d9bde17f990"
+    },
+    {
+      "old_path": "outputs/final/filtered/1006/curve.json",
+      "new_path": "results/original_run/final/filtered/1006/curve.json",
+      "sha256": "811c02fcf0a4c8bca7cdc655475f899d32860504240b860ea8135a4a7d2684a2"
+    },
+    {
+      "old_path": "outputs/final/filtered/1006/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1006/episodes.csv",
+      "sha256": "0b446377b797c1700a3994da31f711b93d28f1bed6ca35a4c35d49f57207d0c2"
+    },
+    {
+      "old_path": "outputs/final/filtered/1006/policy.json",
+      "new_path": "results/original_run/final/filtered/1006/policy.json",
+      "sha256": "7278f290bb75dffa7b2e56e8cb704ced04cf9a529f6f9134e72145ef3319998c"
+    },
+    {
+      "old_path": "outputs/final/filtered/1006/training.json",
+      "new_path": "results/original_run/final/filtered/1006/training.json",
+      "sha256": "54ac55cdd7f28e0a70481ed7813eb3d4ea3cbcbf0860331f266360b88db37b63"
+    },
+    {
+      "old_path": "outputs/final/filtered/1007/curve.json",
+      "new_path": "results/original_run/final/filtered/1007/curve.json",
+      "sha256": "0bf56f6a9ce6dba94eb2f0c4cbed03031421013a29afc9572bfc011c1e7c17ac"
+    },
+    {
+      "old_path": "outputs/final/filtered/1007/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1007/episodes.csv",
+      "sha256": "2663efbc18167bd56726615b3ed6cb33dfc4a4bebbc2e40840e9029eaf8bb4ee"
+    },
+    {
+      "old_path": "outputs/final/filtered/1007/policy.json",
+      "new_path": "results/original_run/final/filtered/1007/policy.json",
+      "sha256": "baaa7d200b711c3a077b21d5bef1acec3d9816aa141591f4c7350da48089c36d"
+    },
+    {
+      "old_path": "outputs/final/filtered/1007/training.json",
+      "new_path": "results/original_run/final/filtered/1007/training.json",
+      "sha256": "957492366cd0e8325b6376f523a3321cf99503bfed8c862938660550da6652b6"
+    },
+    {
+      "old_path": "outputs/final/filtered/1008/curve.json",
+      "new_path": "results/original_run/final/filtered/1008/curve.json",
+      "sha256": "4228b8a8c62db20fdc47708187a76db0c19bbc4f69f7f2a7d949c0eb2e1fd7da"
+    },
+    {
+      "old_path": "outputs/final/filtered/1008/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1008/episodes.csv",
+      "sha256": "116e60708c06fbefe2a7bf5ecee11f983383d49f6dbb26b75845da0874fe6ec0"
+    },
+    {
+      "old_path": "outputs/final/filtered/1008/policy.json",
+      "new_path": "results/original_run/final/filtered/1008/policy.json",
+      "sha256": "9945663c346ec96b1eacfdc0d673b295430dcfb2b4b5c67eb65af70e3bd6ac5f"
+    },
+    {
+      "old_path": "outputs/final/filtered/1008/training.json",
+      "new_path": "results/original_run/final/filtered/1008/training.json",
+      "sha256": "f221764ea09b5fe8e7bd8144749d6f48bc7c4374318bcff10479779e912b83e5"
+    },
+    {
+      "old_path": "outputs/final/filtered/1009/curve.json",
+      "new_path": "results/original_run/final/filtered/1009/curve.json",
+      "sha256": "c29b8617f07b8bf7b4381f7417850456d5c5e285e6a38d3a87500ca731a39ac1"
+    },
+    {
+      "old_path": "outputs/final/filtered/1009/episodes.csv",
+      "new_path": "results/original_run/final/filtered/1009/episodes.csv",
+      "sha256": "e048af6cc3441103d8d48a3a03a09610c05a342498e658aad1653508bfb6998e"
+    },
+    {
+      "old_path": "outputs/final/filtered/1009/policy.json",
+      "new_path": "results/original_run/final/filtered/1009/policy.json",
+      "sha256": "82bf2e66794f3b00705d48f14262e330e1e9f3618ae7a32c55b87e1261dc5d1f"
+    },
+    {
+      "old_path": "outputs/final/filtered/1009/training.json",
+      "new_path": "results/original_run/final/filtered/1009/training.json",
+      "sha256": "84c489730a42121ea99bc14f6c8fe1222f55df8ada9be33888f15b93719ebf84"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1000/curve.json",
+      "new_path": "results/original_run/final/unshielded/1000/curve.json",
+      "sha256": "b3813dfe168fbaba43b90556737ca02142c4cc0241cbcf1438a08471a25145d7"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1000/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1000/episodes.csv",
+      "sha256": "93f2ba14dd1d4fa6ddb4ba583919dd13ac499f232f1dcb3600a154a7e13ef43c"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1000/policy.json",
+      "new_path": "results/original_run/final/unshielded/1000/policy.json",
+      "sha256": "cf8c690c69f223bf6f57930f59be067f3ce4a7f0ed4453fa0e377b34a0faec1f"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1000/training.json",
+      "new_path": "results/original_run/final/unshielded/1000/training.json",
+      "sha256": "c1f00133e6869391ec731932f1a5be839ff5e206137c6ba6141ab3682246b11c"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1001/curve.json",
+      "new_path": "results/original_run/final/unshielded/1001/curve.json",
+      "sha256": "305ededf260a33953b65f04f84e353d155f0d8b43f824566b0a0e3a11be58d64"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1001/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1001/episodes.csv",
+      "sha256": "7cd5f7a124b7be336dbe680fae42e73a545f483df0ef1638e74e603263c34cae"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1001/policy.json",
+      "new_path": "results/original_run/final/unshielded/1001/policy.json",
+      "sha256": "352184fa5fb6cc3affe7ea4469fca0e65a0065fa6bb28b53af12ffdb27b40aba"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1001/training.json",
+      "new_path": "results/original_run/final/unshielded/1001/training.json",
+      "sha256": "a2c9221b8e89a1292b96e8af357643a9c819b71ab3bdf2fe44ca0a6fb3000bed"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1002/curve.json",
+      "new_path": "results/original_run/final/unshielded/1002/curve.json",
+      "sha256": "2ce82016e1ea29e4983f2839ce0903cdcbd92cb3ddab4cafb016320d0cc5fbfa"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1002/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1002/episodes.csv",
+      "sha256": "0fc5971af733a2004aed0ee54382d11314e786aa711c7cb59ed94977ebcecc53"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1002/policy.json",
+      "new_path": "results/original_run/final/unshielded/1002/policy.json",
+      "sha256": "5204527d075d6c0b9e1fd02bae19c691200861fb97dc61c631689e5af789a1e7"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1002/training.json",
+      "new_path": "results/original_run/final/unshielded/1002/training.json",
+      "sha256": "0976fd203734c81f9c37549f42311c4728992eb57f35a3b6c67f16e9d5bfed28"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1003/curve.json",
+      "new_path": "results/original_run/final/unshielded/1003/curve.json",
+      "sha256": "b80d5e3952c96952f989cad3f982a9eea93e488d3e335eebe3d6e8b6ca3fae35"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1003/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1003/episodes.csv",
+      "sha256": "cf9446402d0b5925fdd2fe6137d44b67b926fefb7ed512a202467ce46bf19a7f"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1003/policy.json",
+      "new_path": "results/original_run/final/unshielded/1003/policy.json",
+      "sha256": "d6719d5991642e6474aec9ed6357503c5a0671f776dcafd1b6202f471a892d53"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1003/training.json",
+      "new_path": "results/original_run/final/unshielded/1003/training.json",
+      "sha256": "24555e1b53b9fa1414b9e6c8181f8281b5915db4475ad5888d2dd0608d1d17ae"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1004/curve.json",
+      "new_path": "results/original_run/final/unshielded/1004/curve.json",
+      "sha256": "bd589b1e7f134f3d5bff87b3c77d70c9c2425c1e03119770990cea02909516b5"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1004/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1004/episodes.csv",
+      "sha256": "748ca5ba04e367b8e548c9690261a8d3ef134f0275147778e569d3df75132c81"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1004/policy.json",
+      "new_path": "results/original_run/final/unshielded/1004/policy.json",
+      "sha256": "ca314d6f519519386ec146047524e5a4597ddf3d9c8842a4e49d5917f3d8af80"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1004/training.json",
+      "new_path": "results/original_run/final/unshielded/1004/training.json",
+      "sha256": "2c554c45aa121583f67e49a9362e5318b7f47b0111c4722aed14cc8283624a2d"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1005/curve.json",
+      "new_path": "results/original_run/final/unshielded/1005/curve.json",
+      "sha256": "29babeb658ce8150a0de28bafe31e2e58025c07f7db82e532b2cc9a6f07b92f9"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1005/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1005/episodes.csv",
+      "sha256": "fb9080a083f0fe8699acf91bf869cb393094ae6a849f5fe2adfa7a7804f37cc4"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1005/policy.json",
+      "new_path": "results/original_run/final/unshielded/1005/policy.json",
+      "sha256": "e0262e7ef34242132bcfc9e8265223f93e75867b825f862c4b9a433752703d92"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1005/training.json",
+      "new_path": "results/original_run/final/unshielded/1005/training.json",
+      "sha256": "3e718d6dc7abc3441a2fa66e3243538c2274b188362046fe73d9fc15c5961e2d"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1006/curve.json",
+      "new_path": "results/original_run/final/unshielded/1006/curve.json",
+      "sha256": "811c02fcf0a4c8bca7cdc655475f899d32860504240b860ea8135a4a7d2684a2"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1006/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1006/episodes.csv",
+      "sha256": "0b446377b797c1700a3994da31f711b93d28f1bed6ca35a4c35d49f57207d0c2"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1006/policy.json",
+      "new_path": "results/original_run/final/unshielded/1006/policy.json",
+      "sha256": "7278f290bb75dffa7b2e56e8cb704ced04cf9a529f6f9134e72145ef3319998c"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1006/training.json",
+      "new_path": "results/original_run/final/unshielded/1006/training.json",
+      "sha256": "71283c38413d6bacdf6bd8939ad1be832ef6f7f19e9a32c3748a04d9715a4e0f"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1007/curve.json",
+      "new_path": "results/original_run/final/unshielded/1007/curve.json",
+      "sha256": "0bf56f6a9ce6dba94eb2f0c4cbed03031421013a29afc9572bfc011c1e7c17ac"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1007/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1007/episodes.csv",
+      "sha256": "2663efbc18167bd56726615b3ed6cb33dfc4a4bebbc2e40840e9029eaf8bb4ee"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1007/policy.json",
+      "new_path": "results/original_run/final/unshielded/1007/policy.json",
+      "sha256": "baaa7d200b711c3a077b21d5bef1acec3d9816aa141591f4c7350da48089c36d"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1007/training.json",
+      "new_path": "results/original_run/final/unshielded/1007/training.json",
+      "sha256": "0d405b2ed530529a8e6c943f329c60aa44de33fc5bda4b2e5f51e8333f1f7eb5"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1008/curve.json",
+      "new_path": "results/original_run/final/unshielded/1008/curve.json",
+      "sha256": "4228b8a8c62db20fdc47708187a76db0c19bbc4f69f7f2a7d949c0eb2e1fd7da"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1008/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1008/episodes.csv",
+      "sha256": "116e60708c06fbefe2a7bf5ecee11f983383d49f6dbb26b75845da0874fe6ec0"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1008/policy.json",
+      "new_path": "results/original_run/final/unshielded/1008/policy.json",
+      "sha256": "9945663c346ec96b1eacfdc0d673b295430dcfb2b4b5c67eb65af70e3bd6ac5f"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1008/training.json",
+      "new_path": "results/original_run/final/unshielded/1008/training.json",
+      "sha256": "5473bf210c9c0f24a2fa7cb143a92f5a6f38281bf6b4dc44ad006045aabb9b64"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1009/curve.json",
+      "new_path": "results/original_run/final/unshielded/1009/curve.json",
+      "sha256": "c29b8617f07b8bf7b4381f7417850456d5c5e285e6a38d3a87500ca731a39ac1"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1009/episodes.csv",
+      "new_path": "results/original_run/final/unshielded/1009/episodes.csv",
+      "sha256": "e048af6cc3441103d8d48a3a03a09610c05a342498e658aad1653508bfb6998e"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1009/policy.json",
+      "new_path": "results/original_run/final/unshielded/1009/policy.json",
+      "sha256": "82bf2e66794f3b00705d48f14262e330e1e9f3618ae7a32c55b87e1261dc5d1f"
+    },
+    {
+      "old_path": "outputs/final/unshielded/1009/training.json",
+      "new_path": "results/original_run/final/unshielded/1009/training.json",
+      "sha256": "046ad01f59d6e1f9bf328f989f4571cf162685855a298405ae57e2a7d8d22d28"
+    },
+    {
+      "old_path": "outputs/frozen_protocol.json",
+      "new_path": "results/original_run/frozen_protocol.json",
+      "sha256": "7b485019a842617fdbae3105b60987c2b78d955b163ba056730824b0d38e1f26"
+    },
+    {
+      "old_path": "outputs/per_fault.json",
+      "new_path": "results/original_run/per_fault.json",
+      "sha256": "e0776b08adb485ae74cb4cf6d85fdf8ef518782fa2d897661a341e8303608ab6"
+    },
+    {
+      "old_path": "outputs/pilot.json",
+      "new_path": "results/original_run/pilot.json",
+      "sha256": "73866fe93a71f7764e9ad2ad51bb7198d180518a9ebfcb9367b37ab82ed3fc98"
+    },
+    {
+      "old_path": "outputs/pilot/filtered/curve.json",
+      "new_path": "results/original_run/pilot/filtered/curve.json",
+      "sha256": "70fc607eba34c1a5b65a5976636913bc303361c2f37b601297f333b55cc62571"
+    },
+    {
+      "old_path": "outputs/pilot/filtered/episodes.csv",
+      "new_path": "results/original_run/pilot/filtered/episodes.csv",
+      "sha256": "a3510fb67e8c6526ba7cdd53aa96bac4284ae6386f1e8d1d8a8be7f9b95d9f32"
+    },
+    {
+      "old_path": "outputs/pilot/filtered/policy.json",
+      "new_path": "results/original_run/pilot/filtered/policy.json",
+      "sha256": "9d5766e5989fe184bc5285d6eeba98cce70a60394307637e8d329aa403cb7723"
+    },
+    {
+      "old_path": "outputs/pilot/filtered/training.json",
+      "new_path": "results/original_run/pilot/filtered/training.json",
+      "sha256": "d9377c33c60a6625a56cacd9472c73d4d3917a1294af02727cd45a70105d5f3c"
+    },
+    {
+      "old_path": "outputs/pilot/unshielded/curve.json",
+      "new_path": "results/original_run/pilot/unshielded/curve.json",
+      "sha256": "70fc607eba34c1a5b65a5976636913bc303361c2f37b601297f333b55cc62571"
+    },
+    {
+      "old_path": "outputs/pilot/unshielded/episodes.csv",
+      "new_path": "results/original_run/pilot/unshielded/episodes.csv",
+      "sha256": "a3510fb67e8c6526ba7cdd53aa96bac4284ae6386f1e8d1d8a8be7f9b95d9f32"
+    },
+    {
+      "old_path": "outputs/pilot/unshielded/policy.json",
+      "new_path": "results/original_run/pilot/unshielded/policy.json",
+      "sha256": "9d5766e5989fe184bc5285d6eeba98cce70a60394307637e8d329aa403cb7723"
+    },
+    {
+      "old_path": "outputs/pilot/unshielded/training.json",
+      "new_path": "results/original_run/pilot/unshielded/training.json",
+      "sha256": "598d6e4deb5b7a8e6a744115052d779c68ed4a2ff66c8c79e125f94d862cf18e"
+    },
+    {
+      "old_path": "outputs/policy_checks.json",
+      "new_path": "results/original_run/policy_checks.json",
+      "sha256": "cc3c5c1935a9b2b873df70cd24d8f3ab215f83039df924186c9e2f57ea8edf76"
+    },
+    {
+      "old_path": "outputs/provenance.json",
+      "new_path": "results/original_run/provenance.json",
+      "sha256": "e58ffa12b4ac104025fae4d3572f805c79df5faae2e14434a5a6e4aa1a363a98"
+    },
+    {
+      "old_path": "outputs/run.log",
+      "new_path": "results/original_run/run.log",
+      "sha256": "3154927c44b95f3a4407c8863dfb0fcbf9a643a7ef035897508f72c6158b27bb"
+    },
+    {
+      "old_path": "outputs/scenario_validation.json",
+      "new_path": "results/original_run/scenario_validation.json",
+      "sha256": "da41dbe780a7a3d5cfd0d8e0dea4f0d55cec245b5565631a5b67154fd8fa851f"
+    },
+    {
+      "old_path": "outputs/seed_aggregates.json",
+      "new_path": "results/original_run/seed_aggregates.json",
+      "sha256": "04b3fad270f63e1f895c0cfe257055f853a9a5899f8763e4f1d2901551e2ff72"
+    },
+    {
+      "old_path": "outputs/summary.json",
+      "new_path": "results/original_run/summary.json",
+      "sha256": "961d4b182e9fddae1ffaf26c4d9f03cf8545a1b7495874b0554f08769786641a"
+    },
+    {
+      "old_path": "outputs/tests.log",
+      "new_path": "results/original_run/tests.log",
+      "sha256": "240f3bd8922126cfa5d2e313e1bafb5d309d8fff3b521165f977889491a4d8d4"
+    },
+    {
+      "old_path": "outputs/traces.jsonl",
+      "new_path": "results/original_run/traces.jsonl",
+      "sha256": "b504c2f0ff557dc26299205fca2aa185388f853f211de3913bb0078c2c7f3473"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/100/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/100/curve.json",
+      "sha256": "f9ae7587dd1a74e4eabb707d2679657e1c33d8103fd0c955ef417c1c86937160"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/100/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.1/100/episodes.csv",
+      "sha256": "13514d749bd8b0a3089ec2d1da336ab2d0446e1c1782531e8c9e9c14a7b3f097"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/100/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/100/policy.json",
+      "sha256": "a2cb23b4de7841279455deb952c97b3e5710fbfa3a1386fc60eaa3d85b577374"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/100/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/100/training.json",
+      "sha256": "ef54ccb74b9c100e97ba7e7fe973148a69feb5c7411128bf149eebaf0c68137f"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/101/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/101/curve.json",
+      "sha256": "306978d393aeb5de30f9f7bb3a004248ebb8786473ba941a2cc618a1f882d491"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/101/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.1/101/episodes.csv",
+      "sha256": "3dfff8b592686b96ff747dcd3449dcf5f6a19d5f62400dd0158ae2ad08b5d063"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/101/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/101/policy.json",
+      "sha256": "772d6f52a975b820fb32552d4b78d021ba78ead889359b90279f5646baabcde1"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/101/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/101/training.json",
+      "sha256": "92620d08aeb1de3dd41debdecbc6b2270149b6bebb4265af6d36b80becb46d62"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/102/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/102/curve.json",
+      "sha256": "8cf146d3be799f00c10c1eac5226ffc36d563f568b0f4ce095660f39124bf10e"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/102/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.1/102/episodes.csv",
+      "sha256": "4e878159fb399819a5d33431741b3704d57892dc1e8cdbedf0fe0590ab797c4b"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/102/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/102/policy.json",
+      "sha256": "734c83d2f91017c28ec7b5a14c1764bc7ffb21240198df3b34665d03a7a65f42"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/102/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/102/training.json",
+      "sha256": "cea282ca38868795f173e7288dc3764c3af77c33e642c91c3077279edc026e9e"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/103/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/103/curve.json",
+      "sha256": "03a2bbf3d74bb3cd23d8acc8e628d95257ff78d7409db62bc3aa3f696d3d6eee"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/103/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.1/103/episodes.csv",
+      "sha256": "c2b2813b3630c86a2d65db62eb1265a873c2c4cb72f35fbfd855ff76fa319e2c"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/103/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/103/policy.json",
+      "sha256": "62dcb31bf99ab9ec9e52771e2edb274536075c272718c5d695d87a9443f94dd3"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/103/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/103/training.json",
+      "sha256": "1c2a59123922f0090c6f275a146a0f5beb974b6082accde99883b64a5340a12a"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/104/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/104/curve.json",
+      "sha256": "4a8905b6567a8982a3cfdc379b37e59dfb9bddfb485e19f6687ab496d7b5b1df"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/104/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.1/104/episodes.csv",
+      "sha256": "9fbb523980db2753e3d0b84c62f93af27cfc439b5f536c92b5de288cacf1c65e"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/104/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/104/policy.json",
+      "sha256": "10cb0c33eef0ed68387fa88c79e202100df4952812c450c6b40f5fe5ff352cbc"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.1/104/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.1/104/training.json",
+      "sha256": "b43a59d06777f96281125a9cc6943b9d0861ef264518cad4c9ad82e2065478f4"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/100/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/100/curve.json",
+      "sha256": "c2b61cf805eba9ab28f76518ca55ec3960e559b4e47bc49bbdd23c3c1a8d9ecd"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/100/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.3/100/episodes.csv",
+      "sha256": "2d0ec07a7dc98120334236d1955af68c99e266844e9f25094743b4d8bfdc4c6b"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/100/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/100/policy.json",
+      "sha256": "595a7b98fbdd4fe74a7382824dfddae682ca6558def428fe45101b940203c865"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/100/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/100/training.json",
+      "sha256": "a02386e96c5907f03ebf8339e4c55f5769b54af69c14aed0c2318f76eb995afc"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/101/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/101/curve.json",
+      "sha256": "6f99a7b25fb4b358d63893a23ee6f319fb77dacdeef4da876d9470a2594c7506"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/101/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.3/101/episodes.csv",
+      "sha256": "4cf05b4e718dbae866fc3237d9063b8c680ffc8d03d4dc08058cb4928103e364"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/101/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/101/policy.json",
+      "sha256": "f244c2e201ff84a072ab9f9673122cf0dac665c590ce8f29747992545a22466a"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/101/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/101/training.json",
+      "sha256": "96c45144c7d6fdbf97cd6795474e38c8ca168b5196bf7a461e2e8f9ef616d744"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/102/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/102/curve.json",
+      "sha256": "c790614a98fec5841964d7ed23a45e4508ddb5f4c5c73c54ccb5b617a7c0d1f7"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/102/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.3/102/episodes.csv",
+      "sha256": "4535ac3c4a14b46d9341c30cd7796491a853d2415e930607c8e2e0f6018e51ed"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/102/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/102/policy.json",
+      "sha256": "fd4890ea97d2766fb700203d72b605834759201779cfb172c94acfd616c9b7a8"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/102/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/102/training.json",
+      "sha256": "14551509d1fa3ade61970b3c7f145d6b831c0c1add52b817d3017558061bb535"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/103/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/103/curve.json",
+      "sha256": "5b29c0513b13b78969aecf5367ac3e3788cf5ec74377d4d656c2f828d250a801"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/103/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.3/103/episodes.csv",
+      "sha256": "4b078d6a32cd7c590baf1828fe41996a72f98e03d2db4f46c095acf4abc17055"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/103/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/103/policy.json",
+      "sha256": "61415717f8a857f01b1c4002749f339ade649fe5aca420bb5e117a9084e708ba"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/103/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/103/training.json",
+      "sha256": "6ed979a71e51330b98ea408c365a3f5609031f6770ab2219cc2eaa859ce742ff"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/104/curve.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/104/curve.json",
+      "sha256": "f722d2f46e0bb79a0cb2c7289cdfd321eac2f0f42ed7b7bae7ba2855935fc346"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/104/episodes.csv",
+      "new_path": "results/original_run/tuning/filtered/0.3/104/episodes.csv",
+      "sha256": "552a2146880e34de0017459a2a11547084f9825028452b1ff484467642f1dfbe"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/104/policy.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/104/policy.json",
+      "sha256": "c1d53006f36df7eec6f8710517e04d0d3e2848404da153f16d3802d783f09c9d"
+    },
+    {
+      "old_path": "outputs/tuning/filtered/0.3/104/training.json",
+      "new_path": "results/original_run/tuning/filtered/0.3/104/training.json",
+      "sha256": "b5e9fdb03667d2552dec21cd3e300f97ba18f795ae0b886fb2c3528b0561c086"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/100/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/100/curve.json",
+      "sha256": "f9ae7587dd1a74e4eabb707d2679657e1c33d8103fd0c955ef417c1c86937160"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/100/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.1/100/episodes.csv",
+      "sha256": "13514d749bd8b0a3089ec2d1da336ab2d0446e1c1782531e8c9e9c14a7b3f097"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/100/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/100/policy.json",
+      "sha256": "a2cb23b4de7841279455deb952c97b3e5710fbfa3a1386fc60eaa3d85b577374"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/100/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/100/training.json",
+      "sha256": "427ea7c8e30aed27b065f199d799db198b91f1f56d465dd7f5f14af5e75ec57f"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/101/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/101/curve.json",
+      "sha256": "306978d393aeb5de30f9f7bb3a004248ebb8786473ba941a2cc618a1f882d491"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/101/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.1/101/episodes.csv",
+      "sha256": "3dfff8b592686b96ff747dcd3449dcf5f6a19d5f62400dd0158ae2ad08b5d063"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/101/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/101/policy.json",
+      "sha256": "772d6f52a975b820fb32552d4b78d021ba78ead889359b90279f5646baabcde1"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/101/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/101/training.json",
+      "sha256": "cb8732e0665419a128a6c2e27c810c89d83ba3443726ca6ed71e43b4e239b260"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/102/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/102/curve.json",
+      "sha256": "8cf146d3be799f00c10c1eac5226ffc36d563f568b0f4ce095660f39124bf10e"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/102/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.1/102/episodes.csv",
+      "sha256": "4e878159fb399819a5d33431741b3704d57892dc1e8cdbedf0fe0590ab797c4b"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/102/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/102/policy.json",
+      "sha256": "734c83d2f91017c28ec7b5a14c1764bc7ffb21240198df3b34665d03a7a65f42"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/102/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/102/training.json",
+      "sha256": "aab87148c1bc12fdb987359ba8d2af2d0c74989621050e18b66abbce7668187e"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/103/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/103/curve.json",
+      "sha256": "03a2bbf3d74bb3cd23d8acc8e628d95257ff78d7409db62bc3aa3f696d3d6eee"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/103/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.1/103/episodes.csv",
+      "sha256": "c2b2813b3630c86a2d65db62eb1265a873c2c4cb72f35fbfd855ff76fa319e2c"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/103/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/103/policy.json",
+      "sha256": "62dcb31bf99ab9ec9e52771e2edb274536075c272718c5d695d87a9443f94dd3"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/103/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/103/training.json",
+      "sha256": "7742b902ac02278004623e1842fd58365d2fc535d70bbd94dbe8b567656be9a8"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/104/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/104/curve.json",
+      "sha256": "4a8905b6567a8982a3cfdc379b37e59dfb9bddfb485e19f6687ab496d7b5b1df"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/104/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.1/104/episodes.csv",
+      "sha256": "9fbb523980db2753e3d0b84c62f93af27cfc439b5f536c92b5de288cacf1c65e"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/104/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/104/policy.json",
+      "sha256": "10cb0c33eef0ed68387fa88c79e202100df4952812c450c6b40f5fe5ff352cbc"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.1/104/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.1/104/training.json",
+      "sha256": "335f024c0ddddc7843f063afbea3594ef31183433de28869ddea9c91d84faeaa"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/100/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/100/curve.json",
+      "sha256": "c2b61cf805eba9ab28f76518ca55ec3960e559b4e47bc49bbdd23c3c1a8d9ecd"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/100/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.3/100/episodes.csv",
+      "sha256": "2d0ec07a7dc98120334236d1955af68c99e266844e9f25094743b4d8bfdc4c6b"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/100/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/100/policy.json",
+      "sha256": "595a7b98fbdd4fe74a7382824dfddae682ca6558def428fe45101b940203c865"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/100/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/100/training.json",
+      "sha256": "f74c6136b952839300b177a5e0b748fadb8a90e9b9236b601f9f54ab4c99e5b2"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/101/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/101/curve.json",
+      "sha256": "6f99a7b25fb4b358d63893a23ee6f319fb77dacdeef4da876d9470a2594c7506"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/101/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.3/101/episodes.csv",
+      "sha256": "4cf05b4e718dbae866fc3237d9063b8c680ffc8d03d4dc08058cb4928103e364"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/101/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/101/policy.json",
+      "sha256": "f244c2e201ff84a072ab9f9673122cf0dac665c590ce8f29747992545a22466a"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/101/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/101/training.json",
+      "sha256": "a8d99e87e70c98528cad2106760dabf9504e647cb85d13ff0c9134e8e5791df6"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/102/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/102/curve.json",
+      "sha256": "c790614a98fec5841964d7ed23a45e4508ddb5f4c5c73c54ccb5b617a7c0d1f7"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/102/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.3/102/episodes.csv",
+      "sha256": "4535ac3c4a14b46d9341c30cd7796491a853d2415e930607c8e2e0f6018e51ed"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/102/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/102/policy.json",
+      "sha256": "fd4890ea97d2766fb700203d72b605834759201779cfb172c94acfd616c9b7a8"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/102/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/102/training.json",
+      "sha256": "ef281a1836905e1bd4b35914e57281585d81e6d1f362eb313af9f569712bea79"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/103/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/103/curve.json",
+      "sha256": "5b29c0513b13b78969aecf5367ac3e3788cf5ec74377d4d656c2f828d250a801"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/103/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.3/103/episodes.csv",
+      "sha256": "4b078d6a32cd7c590baf1828fe41996a72f98e03d2db4f46c095acf4abc17055"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/103/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/103/policy.json",
+      "sha256": "61415717f8a857f01b1c4002749f339ade649fe5aca420bb5e117a9084e708ba"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/103/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/103/training.json",
+      "sha256": "86a90ae342139311877f1fdd3d68dbf1197c05491634aad865cf5638016eaa39"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/104/curve.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/104/curve.json",
+      "sha256": "f722d2f46e0bb79a0cb2c7289cdfd321eac2f0f42ed7b7bae7ba2855935fc346"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/104/episodes.csv",
+      "new_path": "results/original_run/tuning/unshielded/0.3/104/episodes.csv",
+      "sha256": "552a2146880e34de0017459a2a11547084f9825028452b1ff484467642f1dfbe"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/104/policy.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/104/policy.json",
+      "sha256": "c1d53006f36df7eec6f8710517e04d0d3e2848404da153f16d3802d783f09c9d"
+    },
+    {
+      "old_path": "outputs/tuning/unshielded/0.3/104/training.json",
+      "new_path": "results/original_run/tuning/unshielded/0.3/104/training.json",
+      "sha256": "799619d95ec71c2c7058d3498c459284a61928a2c565146fb53b19afb990385b"
+    },
+    {
+      "old_path": "outputs/validation.csv",
+      "new_path": "results/original_run/validation.csv",
+      "sha256": "937caa20cabe5afdca0ac035d106fb1854af9cb48474ed4451367fa6315a625e"
+    }
+  ],
+  "live_demo_path_checks": [
+    {
+      "controller": "filtered",
+      "scenario": "node_0",
+      "success": 1,
+      "steps": 3
+    },
+    {
+      "controller": "filtered",
+      "scenario": "cpu_4",
+      "success": 0,
+      "steps": 20
+    },
+    {
+      "controller": "rule",
+      "scenario": "cpu_4",
+      "success": 1,
+      "steps": 1
+    }
+  ]
+}

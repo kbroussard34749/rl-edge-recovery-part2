@@ -30,3 +30,7 @@ The modular simulator preserves slides 4–6: node resources, dependency, state,
 ## Controller-layer verification
 
 The extracted modules retain the learning and evaluation behavior described in slides 6–11. Comments make the proposed-action Q update, exploration schedule, frozen-policy evaluation, and unseen-state restart tie explicit. Re-evaluating the 20 saved policies matches the original result rows and traces. The current test suite contains 25 tests across original and modular checks; these later extraction checks remain distinct from the original nine-test result. No slide or narration file was edited.
+
+## Evidence path relocation
+
+Every old outputs/ path maps to results/original_run/ with the remainder unchanged. The original config.json maps to config/experiment.json; scenarios.json maps to config/scenarios.json. Original slide source labels remain historical paths until a later presentation revision. The edited v3 was not changed. Compatibility demo commands now read relocated policies through the modular implementation.

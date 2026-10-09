@@ -54,3 +54,11 @@ Pre- and post-check-in approval covers this increment. Added an isolated run com
 Commit scope: experiment.py, paths.py, evidence.py, policy_verification.py, five scripts for bootstrap/run/validation/analysis/policy checks, test_experiment.py, and these technical records.
 
 Commit: `Add isolated experiment orchestration and evidence checks`.
+
+## Evidence relocation check-in — October 9, 2026
+
+Within the granted pre/post approval, relocated all 187 original outputs with matching hashes, moved unchanged design files into config/, and retained original reference code under tests/reference/. Updated compatibility commands and comparison scripts to use canonical paths. All 31 tests and both extraction comparison scripts pass. Restarted the existing local demo to load its corrected evidence path; no demo redesign is included.
+
+Commit scope: tracked output/config/reference moves, compatibility commands, paths, comparison scripts and check records, package metadata, folder instructions, and technical documentation. AGENTS.md, .idea/, private course attachments, and editable slides remain excluded.
+
+Commit: `Relocate original evidence and connect canonical repository paths`.

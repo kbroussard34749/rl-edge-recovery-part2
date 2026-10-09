@@ -29,4 +29,4 @@ The completed original implementation uses standard-library random.Random, CSV, 
 
 ## Evidence preservation
 
-Original files are inventoried at the reference Git commit. Original outputs remain under outputs/ during foundation construction. A later approved increment will relocate them to results/original_run/ byte-for-byte. New execution writes separately under results/reproductions/. Source hashes, paths, timing, and process memory metadata may differ; every difference will be identified. Equal outcome totals alone are insufficient to establish behavioral equivalence.
+Original files are inventoried at the reference Git commit. Original outputs have been relocated from outputs/ to results/original_run/ byte-for-byte. docs/relocation_checks.json records every moved path and hash. New execution writes separately under results/reproductions/. Source hashes, paths, timing, and process memory metadata may differ; every difference will be identified. Equal outcome totals alone are insufficient to establish behavioral equivalence.

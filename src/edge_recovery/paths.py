@@ -3,10 +3,9 @@
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-# Updated in the evidence-relocation increment after file identity is checked.
-ORIGINAL_RUN = ROOT / "outputs"
-CONFIG_PATH = ROOT / "config.json"
-SCENARIOS_PATH = ROOT / "scenarios.json"
+ORIGINAL_RUN = ROOT / "results/original_run"
+CONFIG_PATH = ROOT / "config/experiment.json"
+SCENARIOS_PATH = ROOT / "config/scenarios.json"
 
 
 def protect_original(destination: Path):
