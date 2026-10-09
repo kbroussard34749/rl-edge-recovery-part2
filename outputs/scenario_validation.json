@@ -1,0 +1,170 @@
+[
+  {
+    "id": "crash_0",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 8,
+    "checked_edges": 18
+  },
+  {
+    "id": "crash_1",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 8,
+    "checked_edges": 18
+  },
+  {
+    "id": "crash_2",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 4,
+    "checked_edges": 9
+  },
+  {
+    "id": "crash_3",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 8,
+    "checked_edges": 18
+  },
+  {
+    "id": "crash_4",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 8,
+    "checked_edges": 18
+  },
+  {
+    "id": "crash_5",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 4,
+    "checked_edges": 9
+  },
+  {
+    "id": "cpu_0",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 4,
+    "checked_edges": 9
+  },
+  {
+    "id": "cpu_1",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "cpu_2",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "cpu_3",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 4,
+    "checked_edges": 9
+  },
+  {
+    "id": "cpu_4",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "cpu_5",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "memory_0",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "memory_1",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "memory_2",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "memory_3",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "memory_4",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "memory_5",
+    "feasible": true,
+    "shortest_steps": 1,
+    "reachable_physical_states": 6,
+    "checked_edges": 18
+  },
+  {
+    "id": "node_0",
+    "feasible": true,
+    "shortest_steps": 3,
+    "reachable_physical_states": 15,
+    "checked_edges": 63
+  },
+  {
+    "id": "node_1",
+    "feasible": true,
+    "shortest_steps": 3,
+    "reachable_physical_states": 15,
+    "checked_edges": 63
+  },
+  {
+    "id": "node_2",
+    "feasible": true,
+    "shortest_steps": 3,
+    "reachable_physical_states": 15,
+    "checked_edges": 63
+  },
+  {
+    "id": "node_3",
+    "feasible": true,
+    "shortest_steps": 3,
+    "reachable_physical_states": 15,
+    "checked_edges": 63
+  },
+  {
+    "id": "node_4",
+    "feasible": true,
+    "shortest_steps": 3,
+    "reachable_physical_states": 15,
+    "checked_edges": 63
+  },
+  {
+    "id": "node_5",
+    "feasible": true,
+    "shortest_steps": 3,
+    "reachable_physical_states": 15,
+    "checked_edges": 63
+  }
+]

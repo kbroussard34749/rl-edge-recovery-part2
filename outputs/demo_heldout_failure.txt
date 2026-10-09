@@ -1,0 +1,1559 @@
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 1,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 20
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 19
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 2,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 19
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 18
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 3,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 18
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 17
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 4,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 17
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 16
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 5,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 16
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 15
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 6,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 15
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 14
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 7,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 14
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 13
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 8,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 13
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 12
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 9,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 12
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 11
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 10,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 11
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 10
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 11,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 10
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 9
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 12,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 9
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 8
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 13,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 8
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 7
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 14,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 7
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 6
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 15,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 6
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 5
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 16,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 5
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 4
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 17,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 4
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 3
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 18,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 3
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 2
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 19,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 2
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 1
+  },
+  "reward": -23,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 20,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 1
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 0
+  },
+  "reward": -43,
+  "proposed": "restart",
+  "executed": "restart",
+  "replaced": 0,
+  "invalid": 1,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 0,
+  "critical_unavailable": 2,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+SUMMARY {
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "fault": "cpu",
+  "split": "test",
+  "success": 0,
+  "steps": 20,
+  "return_value": -480,
+  "unseen": 20,
+  "cost": 0,
+  "critical_unavailable": 40,
+  "batch_unavailable": 20,
+  "throttled": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "replaced": 0,
+  "invalid": 20
+}

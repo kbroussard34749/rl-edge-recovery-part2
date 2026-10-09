@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "total_seconds": 6.956020666999393,
+  "total_planned_training_episodes": 800000,
+  "pilot_episodes": 2000,
+  "process_peak_rss": 52674560,
+  "peak_memory_scope": "whole experiment process including transition caches; not isolated per learner",
+  "submission_performed": false,
+  "publication_performed": false
+}

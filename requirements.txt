@@ -1,0 +1,2 @@
+# Experiment, analysis and demo use only Python 3.12 standard library.
+# No pip packages required. Runtime tested: Python 3.12.14 on macOS arm64.

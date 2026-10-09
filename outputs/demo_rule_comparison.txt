@@ -1,0 +1,96 @@
+{
+  "controller": "rule",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "split": "test",
+  "step": 1,
+  "state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      1,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 20
+  },
+  "next_state": {
+    "health": [
+      true,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      3,
+      1
+    ],
+    "mem": [
+      1,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      0,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 19
+  },
+  "reward": -4,
+  "proposed": "migrate_N1",
+  "executed": "migrate_N1",
+  "replaced": 0,
+  "invalid": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 3,
+  "critical_unavailable": 0,
+  "batch_unavailable": 0,
+  "throttled": 0,
+  "success": 1
+}
+SUMMARY {
+  "controller": "rule",
+  "seed": 1000,
+  "scenario": "cpu_4",
+  "fault": "cpu",
+  "split": "test",
+  "success": 1,
+  "steps": 1,
+  "return_value": -4,
+  "unseen": 0,
+  "cost": 3,
+  "critical_unavailable": 0,
+  "batch_unavailable": 0,
+  "throttled": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "replaced": 0,
+  "invalid": 0
+}

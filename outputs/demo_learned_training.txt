@@ -1,0 +1,250 @@
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "node_0",
+  "split": "train",
+  "step": 1,
+  "state": {
+    "health": [
+      false,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      0,
+      0
+    ],
+    "mem": [
+      0,
+      0,
+      0
+    ],
+    "place": [
+      0,
+      0,
+      0
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 20
+  },
+  "next_state": {
+    "health": [
+      false,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      0,
+      0
+    ],
+    "mem": [
+      0,
+      0,
+      0
+    ],
+    "place": [
+      0,
+      2,
+      0
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 19
+  },
+  "reward": -16,
+  "proposed": "restore_N3",
+  "executed": "restore_N3",
+  "replaced": 0,
+  "invalid": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 3,
+  "critical_unavailable": 1,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "node_0",
+  "split": "train",
+  "step": 2,
+  "state": {
+    "health": [
+      false,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      0,
+      0
+    ],
+    "mem": [
+      0,
+      0,
+      0
+    ],
+    "place": [
+      0,
+      2,
+      0
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 19
+  },
+  "next_state": {
+    "health": [
+      false,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      0,
+      0
+    ],
+    "mem": [
+      0,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      2,
+      0
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 18
+  },
+  "reward": -6,
+  "proposed": "restore_N2",
+  "executed": "restore_N2",
+  "replaced": 0,
+  "invalid": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 3,
+  "critical_unavailable": 0,
+  "batch_unavailable": 1,
+  "throttled": 0,
+  "success": 0
+}
+{
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "node_0",
+  "split": "train",
+  "step": 3,
+  "state": {
+    "health": [
+      false,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      0,
+      0
+    ],
+    "mem": [
+      0,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      2,
+      0
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 18
+  },
+  "next_state": {
+    "health": [
+      false,
+      true,
+      true
+    ],
+    "cpu": [
+      0,
+      0,
+      0
+    ],
+    "mem": [
+      0,
+      0,
+      0
+    ],
+    "place": [
+      1,
+      2,
+      1
+    ],
+    "running": [
+      true,
+      true,
+      true
+    ],
+    "throttled": false,
+    "left": 17
+  },
+  "reward": -4,
+  "proposed": "restore_N2",
+  "executed": "restore_N2",
+  "replaced": 0,
+  "invalid": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "cost": 3,
+  "critical_unavailable": 0,
+  "batch_unavailable": 0,
+  "throttled": 0,
+  "success": 1
+}
+SUMMARY {
+  "controller": "filtered",
+  "seed": 1000,
+  "scenario": "node_0",
+  "fault": "node",
+  "split": "train",
+  "success": 1,
+  "steps": 3,
+  "return_value": -26,
+  "unseen": 0,
+  "cost": 9,
+  "critical_unavailable": 1,
+  "batch_unavailable": 2,
+  "throttled": 0,
+  "prohibited": 0,
+  "violations": 0,
+  "replaced": 0,
+  "invalid": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "episode": 200,
+    "return_mean": -88.215,
+    "success_mean": 0.935,
+    "epsilon": 0.776125
+  },
+  {
+    "episode": 400,
+    "return_mean": -77.555,
+    "success_mean": 0.92,
+    "epsilon": 0.551125
+  },
+  {
+    "episode": 600,
+    "return_mean": -54.305,
+    "success_mean": 0.92,
+    "epsilon": 0.326125
+  },
+  {
+    "episode": 800,
+    "return_mean": -27.175,
+    "success_mean": 0.97,
+    "epsilon": 0.10112499999999991
+  },
+  {
+    "episode": 1000,
+    "return_mean": -26.435,
+    "success_mean": 0.965,
+    "epsilon": 0.09999999999999998
+  }
+]

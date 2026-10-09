@@ -1,0 +1,14 @@
+test_blocked_restore_updates_proposal (test_recovery.ModelTests.test_blocked_restore_updates_proposal) ... ok
+test_capacity_boundary_and_throttle_reward (test_recovery.ModelTests.test_capacity_boundary_and_throttle_reward) ... ok
+test_critical_loss_filter (test_recovery.ModelTests.test_critical_loss_filter) ... ok
+test_final_step_success_and_failure (test_recovery.ModelTests.test_final_step_success_and_failure) ... ok
+test_manifest (test_recovery.ModelTests.test_manifest) ... ok
+test_memory_migration (test_recovery.ModelTests.test_memory_migration) ... ok
+test_restore_failed_node_and_invalid_migration (test_recovery.ModelTests.test_restore_failed_node_and_invalid_migration) ... ok
+test_terminal_no_bootstrap (test_recovery.ModelTests.test_terminal_no_bootstrap) ... ok
+test_web_dependency_and_wait_reward (test_recovery.ModelTests.test_web_dependency_and_wait_reward) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK

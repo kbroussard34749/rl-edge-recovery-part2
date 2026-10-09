@@ -1,0 +1,24 @@
+[
+  {
+    "controller": "unshielded",
+    "seed": 7,
+    "alpha": 0.1,
+    "filtered": false,
+    "episodes": 1000,
+    "seconds": 0.0421366249993298,
+    "q_states": 549,
+    "nonzero_pairs": 2762,
+    "process_peak_rss_bytes": 35012608
+  },
+  {
+    "controller": "filtered",
+    "seed": 7,
+    "alpha": 0.1,
+    "filtered": true,
+    "episodes": 1000,
+    "seconds": 0.02668404200085206,
+    "q_states": 549,
+    "nonzero_pairs": 2762,
+    "process_peak_rss_bytes": 37224448
+  }
+]

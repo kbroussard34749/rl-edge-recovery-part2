@@ -1,0 +1,10 @@
+{
+  "seed": 1002,
+  "alpha": 0.1,
+  "filtered": false,
+  "episodes": 20000,
+  "seconds": 0.1646539590001339,
+  "q_states": 623,
+  "nonzero_pairs": 4705,
+  "process_peak_rss_bytes": 47218688
+}
