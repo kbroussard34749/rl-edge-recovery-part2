@@ -8,7 +8,7 @@ This is the current implementation record, not a reconstruction of earlier appro
 |---|---|---|---|
 | 1. Foundation | Baseline plan, package foundation, gate policy, protocol, evidence inventory, presentation map | Original source hashes; copied-plan identity; existing implementation unchanged | Committed locally: be7a681 |
 | 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Committed locally: c4c50f0 |
-| 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Approved for commit |
+| 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Committed locally: bcdfdf7 |
 | 4. Experiment | Orchestration, configuration, isolated reproduction, analysis and policy verification | Full planned run and artifact comparisons | Not started |
 | 5. Demonstration | Local demo, boundary fixture, run instructions, final presentation path alignment | Actual demo cases and final code/evidence consistency | Not started |
 | 6. Release | Approved cumulative changes, package and remote | Clean extraction checks, contents and access status | Not started |
@@ -46,3 +46,11 @@ These development runs are extraction checks, not the full planned experiment. T
 Proposed commit: `Extract commented controllers training and evaluation`.
 
 Pre- and post-check-in approval granted October 9, 2026 for the current code, experiment orchestration, evidence relocation, and full isolated reproduction. These stages can be committed after their checks pass. This authorization does not extend to pushing, instructor access, a replacement ZIP, or presentation edits. No push, invitation, presentation edit, or replacement ZIP has occurred.
+
+## Experiment orchestration check-in — October 9, 2026
+
+Pre- and post-check-in approval covers this increment. Added an isolated run command, configuration validation, explicit tuning/freeze/final ordering, read-only original analysis, and policy evidence checks. All 31 tests pass, including overwrite protection and a control-flow test that checks the freeze file before held-out evaluation. The five analysis/policy JSON records recomputed read-only from original evidence match its serialization. Full reproduction follows relocation.
+
+Commit scope: experiment.py, paths.py, evidence.py, policy_verification.py, five scripts for bootstrap/run/validation/analysis/policy checks, test_experiment.py, and these technical records.
+
+Commit: `Add isolated experiment orchestration and evidence checks`.

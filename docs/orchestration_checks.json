@@ -1,0 +1,8 @@
+{
+  "tests_passed": 31,
+  "analysis_records_matched": 5,
+  "original_analysis_read_only": true,
+  "freeze_before_heldout_control_flow_test_passed": true,
+  "overwrite_protection_tests_passed": true,
+  "full_reproduction_completed": false
+}

@@ -61,3 +61,13 @@ Rationale: training changes action-value estimates, whereas evaluation measures 
 Consequence: the original random draw order, epsilon expression, sparse table insertion order, JSON format, greedy ties, and validation ranking are retained. Unseen states still select restart from zero values. No fallback controller or held-out-driven redesign is introduced. Process timing and RSS are measurements, not deterministic equivalence targets.
 
 Status: eight development cases produce byte-identical episode, curve, and policy artifacts. All 20 saved final policies reproduce the retained 420 evaluation rows and 2,832 traces without table updates. Full-budget experiment orchestration and reproduction remain pending.
+
+## October 9, 2026 — Isolated experiment execution and evidence analysis
+
+Decision: require a fresh output directory, validate source configuration against the frozen design, and save the validation-based selection before final held-out evaluation. Analysis and policy checks read original evidence without writing to it.
+
+Rationale: rerunning an experiment must not replace the evidence used in the presentation. Explicit configuration checks prevent an edited manifest or unsupported model constant from silently changing the experiment.
+
+Consequence: existing output destinations are rejected, including nested paths inside the original run. Each new run retains configuration snapshots and a source-hash identity record. Development budgets are identified separately from full reproduction. Episode and trace summaries retain their original serialization.
+
+Status: 31 tests pass. Read-only modular analysis and policy verification reproduce all five original JSON check/summary records. Full-budget execution is pending evidence relocation.
