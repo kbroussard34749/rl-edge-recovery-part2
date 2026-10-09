@@ -10,7 +10,7 @@ Rationale: the current `recovery.py` combines simulation, controllers, training,
 
 Consequence: imports, repository paths, CLI entry points, and evidence references will change. State, action, reward, filter, scenario, and learning behavior remain the reference behavior.
 
-Status: package foundation exists. Module extraction and entry-point migration are pending.
+Status: environment, safety filter, reward, and scenario modules are extracted and verified. Controller extraction and entry-point migration are pending.
 
 ## October 9, 2026 — Submitted design as implementation baseline
 
@@ -41,3 +41,13 @@ Rationale: duplicate editable decks can diverge from the implementation and meas
 Consequence: evidence-path changes and test-count changes must be reconciled with the presentation after verification. The reference deck is identified by hash rather than copied into the codebase.
 
 Status: the current v3 deck was inspected and left unchanged during foundation construction.
+
+## October 9, 2026 — Simulator boundaries and equivalence checks
+
+Decision: keep structural execution and its violation checker in environment.py, actual filtered execution and reward in safety_filter.py, and scenario construction with development-only feasibility search in scenarios.py.
+
+Rationale: both learning conditions need the same physical execution rules. Filtering changes what executes while preserving the proposed command for later Q updates. Keeping those responsibilities explicit prevents invalid commands from being counted as prohibited executable proposals.
+
+Consequence: immutable state, command indices, physical target order, failure health flags, budget accounting, reward weights, and audit field names retain their original meaning. The original implementation stays available as the behavioral reference during extraction.
+
+Status: boundary tests and differential comparisons pass. All retained evaluation transitions replay identically, and original output hashes remain unchanged. This verifies the simulator extraction within the exercised state space; controller equivalence and full experiment reproduction remain pending.

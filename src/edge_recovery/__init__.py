@@ -1,6 +1,6 @@
-"""Simulation-only edge recovery package under incremental construction.
+"""Simulation-only edge recovery package built in separate increments.
 
-The original runnable implementation remains at repository root until its
-behavior is preserved in approved modules. Importing this foundation package
-performs no training, evaluation, network operation, or output mutation.
+Environment, filtering, reward, and scenarios are implemented. Controllers and
+experiment orchestration are pending. Importing the package does not run an
+experiment or change outputs.
 """

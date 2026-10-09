@@ -22,3 +22,7 @@ Reference: RL_Project_Part_2_Keith_Broussard_Draft_v3.pptx, inspected October 9,
 - Slides 9–11 use original outputs/ paths. After relocation, provide a path map and obtain approval before changing Keith's deck or narration.
 - Methodological checks, plots, results and demo must still describe the same frozen model and measured outcomes.
 - No recording duration, face/voice coverage, understanding, personal reflection, instructor access or submission is established by this refactor.
+
+## Simulator increment verification
+
+The modular simulator preserves slides 4–6: node resources, dependency, state, action order, fixed filter, reward, and termination. Test discovery currently runs 17 tests: nine original reference tests and eight modular boundary tests. These are implementation checks after the original run, not a revision of its historical nine-test result. The deck is unchanged; final test-count wording will be reconciled after the test migration is complete.

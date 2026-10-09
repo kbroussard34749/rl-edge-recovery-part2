@@ -6,8 +6,8 @@ This is the current implementation record, not a reconstruction of earlier appro
 
 | Increment | Planned scope | Evidence before approval | Status |
 |---|---|---|---|
-| 1. Foundation | Baseline plan, package foundation, gate policy, protocol, evidence inventory, presentation map | Original source hashes; copied-plan identity; existing implementation unchanged | Approved for commit |
-| 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Not started |
+| 1. Foundation | Baseline plan, package foundation, gate policy, protocol, evidence inventory, presentation map | Original source hashes; copied-plan identity; existing implementation unchanged | Committed locally: be7a681 |
+| 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Approved for commit |
 | 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Not started |
 | 4. Experiment | Orchestration, configuration, isolated reproduction, analysis and policy verification | Full planned run and artifact comparisons | Not started |
 | 5. Demonstration | Local demo, boundary fixture, run instructions, final presentation path alignment | Actual demo cases and final code/evidence consistency | Not started |
@@ -24,3 +24,13 @@ Approval received October 9, 2026 for the foundation commit and simulator increm
 Proposed commit: `Establish Part 1 baseline and gated refactor foundation`.
 
 Next proposed increment: implement the commented simulator and scenario modules while retaining the original implementation as a comparison reference.
+
+## Simulator check-in — October 9, 2026
+
+The approved simulator increment extracts environment.py, safety_filter.py, and scenarios.py under src/edge_recovery/. The original recovery.py and runnable commands remain intact. Module comments explain the workflow and consequential assumptions using the requested writing style.
+
+Verification: 17 tests passed (nine retained original tests and eight modular simulator tests). The differential check covered 217 reachable physical states, 5,859 structural transitions, 4,428 executed steps, 7,290 successful-state terminal rejections, and all 2,832 retained evaluation transitions. The 24-start manifest serialization and all feasibility records match. All 187 retained output files match their reference hashes. See simulator_checks.json and simulator_validation.md.
+
+Proposed commit: `Extract commented simulator and verify reference behavior`.
+
+Approval received October 9, 2026 for the simulator commit and the controllers, training, and evaluation increment. The controller-layer commit requires its own check-in. No full refactored training run, push, instructor invitation, or replacement ZIP has occurred.

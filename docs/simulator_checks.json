@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scope": "Simulator extraction; no refactored controller or training run",
+  "reference_commit": "5b5a255143427bfaf52416be555970d0b7d788ca",
+  "scenarios": 24,
+  "manifest_serialization_identical": true,
+  "feasibility_records_identical": true,
+  "reachable_physical_states": 217,
+  "transition_comparisons": 5859,
+  "step_comparisons": 4428,
+  "successful_terminal_rejections": 7290,
+  "retained_trace_replays": 2832,
+  "original_output_files_unchanged": 187,
+  "source_sha256": {
+    "src/edge_recovery/environment.py": "f27c34a41082ccadd37ffaed25efebe54c0f30f05e709b1c26cbb39273542895",
+    "src/edge_recovery/safety_filter.py": "44c6f749636c979010158b4cd09a8126572d1e2660681be1491e835f206dc422",
+    "src/edge_recovery/scenarios.py": "43d176e0cb5a0c34ded192a59b47cd6fac15a7aa1ef0737b1a68148687b54361",
+    "tests/test_simulator.py": "9e7fb54e38230b1a176f917b42b255e7c356cd79d52dbf396178662af301f80b",
+    "scripts/verify_simulator_equivalence.py": "9b8cad96e81862d18c20fdf8b1ad64201f8af97b78266c7fa369117bd99fc1c4"
+  }
+}
