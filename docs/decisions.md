@@ -91,3 +91,13 @@ Rationale: a refactor can preserve headline outcomes while changing random draw 
 Consequence: 136 scientific files and both design snapshots must match exactly. Training, pilot and provenance records are compared on scientific fields; execution time and cumulative process RSS remain separately reported measurements. Run identity hashes refer to the executed package source. Package-level comments describe responsibilities rather than temporary build status.
 
 Status: all 42 model runs reproduce; the 800,000-episode training budget and 2,000 pilot episodes are complete. Both learners select alpha .1. All 420 final evaluation rows and 2,832 traces match. Original output hashes remain unchanged. Reproduction time and memory differences are recorded without implying performance improvement.
+
+## October 9, 2026 — Preserve CSV line endings in Git
+
+Decision: disable Git text normalization for CSV artifacts and treat carriage returns as valid line-ending characters in whitespace checks.
+
+Rationale: the original and reproduced CSV writers use CRLF terminators. Normalizing those files during checkout would change the bytes used for artifact identity checks.
+
+Consequence: .gitattributes preserves the measured serialization without rewriting either evidence set. Other whitespace checks remain enabled.
+
+Status: committed artifact bytes are checked against worktree hashes; the full reproduction and original evidence remain unchanged.

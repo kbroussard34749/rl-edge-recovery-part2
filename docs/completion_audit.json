@@ -3,7 +3,7 @@
     "current code committed",
     "experiment orchestration committed",
     "evidence relocation committed",
-    "full isolated reproduction verified and approved for commit"
+    "full isolated reproduction committed: b217e25"
   ],
   "full_reproduction_verified": true,
   "exact_scientific_artifacts_match": true,
@@ -16,5 +16,7 @@
   "test_log_verified": true,
   "documentation_links_verified": true,
   "ignored_local_controls_excluded": true,
-  "remote_push_performed": false
+  "remote_push_performed": false,
+  "git_artifact_bytes_verified": 323,
+  "csv_line_endings_preserved": true
 }
