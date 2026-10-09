@@ -4,13 +4,14 @@ PhDAI-830 Part 2, Keith G. Broussard. Simulation only. No network-device, hyperv
 
 ## Run from a clean extracted directory
 
-Requires Python 3.12 (tested 3.12.14). Experiment, tests, summaries, and live demo use the standard library. No pip installation is required. Commands assume this directory is current and `python3` points to Python 3.12.
+Requires Python 3.12 (tested 3.12.14 on macOS). Windows execution has not been tested; peak RSS is unavailable where the standard-library resource module is absent. Experiment, tests, summaries, and live demo use the standard library. No pip installation is required. Commands assume this directory is current and `python3` points to Python 3.12.
 
 ```sh
 python3 -m unittest discover -s tests -v
 python3 recovery.py validate
 python3 recovery.py run
 python3 analyze.py
+python3 verify_policy.py
 python3 recovery.py demo --controller filtered --scenario node_0
 python3 recovery.py demo --controller filtered --scenario cpu_4
 python3 boundary_demo.py
@@ -58,4 +59,4 @@ OpenAI Codex assisted with source inspection, implementation, test construction,
 
 ## Access and submission
 
-This is a complete local repository/package. A local Git commit or ZIP does not establish instructor access. Remote destination, reviewer access, and the final recording still require confirmation/checking. No publication or LMS submission has occurred. Course manuscripts and local/private course archives are not bundled into this repository; scholarly references should use their public publication URLs.
+This is a complete local repository/package. A local Git commit or ZIP does not establish instructor access. Remote destination, reviewer access, and the final recording still require confirmation/checking. The private GitHub repository is https://github.com/kbroussard34749/rl-edge-recovery-part2; private visibility and the main commit were verified. Instructor access is pending the correct GitHub username. No LMS submission has occurred. Course manuscripts and local/private course archives are not bundled into this repository; scholarly references should use their public publication URLs.
