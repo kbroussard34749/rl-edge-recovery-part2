@@ -25,6 +25,15 @@ for c,sp in sorted(set((r['controller'],r['split']) for r in rows)):
     summary.append(a)
 (ROOT/'outputs/seed_aggregates.json').write_text(json.dumps(aggregates,indent=2))
 (ROOT/'outputs/summary.json').write_text(json.dumps(summary,indent=2))
+fault_rows=[]
+for c,split,fault in sorted(set((r['controller'],r['split'],r['fault']) for r in rows)):
+    g=[r for r in rows if r['controller']==c and r['split']==split and r['fault']==fault]
+    seeds=sorted(set(r['seed'] for r in g)); rates=[]
+    for seed in seeds:
+        one=[r for r in g if r['seed']==seed]; rates.append(statistics.mean(r['success'] for r in one))
+    fault_rows.append(dict(controller=c,split=split,fault=fault,seeds=len(seeds),configurations_per_seed=len(g)//len(seeds),success_mean=statistics.mean(rates),success_sd=statistics.stdev(rates) if len(rates)>1 else None))
+(ROOT/'outputs/per_fault.json').write_text(json.dumps(fault_rows,indent=2))
+
 print(json.dumps(summary,indent=2))
 # Every retained evaluation trace is replayed against the implementation.
 import recovery as model

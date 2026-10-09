@@ -1,0 +1,218 @@
+[
+  {
+    "controller": "filtered",
+    "split": "test",
+    "fault": "cpu",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 0.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "test",
+    "fault": "crash",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "test",
+    "fault": "memory",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 0.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "test",
+    "fault": "node",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 0.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "train",
+    "fault": "cpu",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "train",
+    "fault": "crash",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "train",
+    "fault": "memory",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "filtered",
+    "split": "train",
+    "fault": "node",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "rule",
+    "split": "test",
+    "fault": "cpu",
+    "seeds": 1,
+    "configurations_per_seed": 2,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "test",
+    "fault": "crash",
+    "seeds": 1,
+    "configurations_per_seed": 2,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "test",
+    "fault": "memory",
+    "seeds": 1,
+    "configurations_per_seed": 2,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "test",
+    "fault": "node",
+    "seeds": 1,
+    "configurations_per_seed": 2,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "train",
+    "fault": "cpu",
+    "seeds": 1,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "train",
+    "fault": "crash",
+    "seeds": 1,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "train",
+    "fault": "memory",
+    "seeds": 1,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "rule",
+    "split": "train",
+    "fault": "node",
+    "seeds": 1,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": null
+  },
+  {
+    "controller": "unshielded",
+    "split": "test",
+    "fault": "cpu",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 0.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "test",
+    "fault": "crash",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "test",
+    "fault": "memory",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 0.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "test",
+    "fault": "node",
+    "seeds": 10,
+    "configurations_per_seed": 2,
+    "success_mean": 0.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "train",
+    "fault": "cpu",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "train",
+    "fault": "crash",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "train",
+    "fault": "memory",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  },
+  {
+    "controller": "unshielded",
+    "split": "train",
+    "fault": "node",
+    "seeds": 10,
+    "configurations_per_seed": 3,
+    "success_mean": 1.0,
+    "success_sd": 0.0
+  }
+]
