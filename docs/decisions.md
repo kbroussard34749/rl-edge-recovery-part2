@@ -6,11 +6,11 @@ Entries record technical choices, rationale, implementation consequences, and ve
 
 Decision: separate reusable Python modules under `src/edge_recovery/`, execution entry points under `scripts/`, tests under `tests/`, experiment configuration under `config/`, retained evidence under `results/`, and technical documentation under `docs/`.
 
-Rationale: the current `recovery.py` combines simulation, controllers, training, evaluation, and orchestration. Separating these responsibilities makes dependencies explicit and permits focused behavior checks.
+Rationale: the original `recovery.py` combined simulation, controllers, training, evaluation, and orchestration. Separating these responsibilities makes dependencies explicit and permits focused behavior checks.
 
-Consequence: imports, repository paths, CLI entry points, and evidence references will change. State, action, reward, filter, scenario, and learning behavior remain the reference behavior.
+Consequence: imports, repository paths, CLI entry points, and evidence references use the modular layout. State, action, reward, filter, scenario, and learning behavior remain the reference behavior.
 
-Status: environment, safety filter, reward, and scenario modules are extracted and verified. Controller, training, and evaluation extraction checks now pass. Entry-point migration and full orchestration are pending.
+Status: simulator, controller, training, evaluation, and orchestration modules are implemented and verified. Root compatibility entry points use the modular implementation. Dedicated demo-module restructuring was completed and checked on October 11, 2026; its commit check-in is pending.
 
 ## October 9, 2026 — Submitted design as implementation baseline
 
@@ -30,7 +30,7 @@ Rationale: structural changes must be evaluated against the measured reference r
 
 Consequence: compare policies, episode records, evaluation rows, traces, and summaries. Source paths, hashes, execution time, and resource metadata may differ and require explicit accounting. Matching aggregate results alone does not establish behavioral equivalence.
 
-Status: all 199 original tracked files were inventoried. The foundation check found only the intended README change. Evidence relocation and full reproduction are pending.
+Status: the foundation inventory covers 199 original tracked files. All 187 original output files retain their hashes after relocation. The complete isolated reproduction matches the original scientific evidence.
 
 ## October 9, 2026 — Keep one editable presentation source
 
@@ -48,9 +48,9 @@ Decision: keep structural execution and its violation checker in environment.py,
 
 Rationale: both learning conditions need the same physical execution rules. Filtering changes what executes while preserving the proposed command for later Q updates. Keeping those responsibilities explicit prevents invalid commands from being counted as prohibited executable proposals.
 
-Consequence: immutable state, command indices, physical target order, failure health flags, budget accounting, reward weights, and audit field names retain their original meaning. The original implementation stays available as the behavioral reference during extraction.
+Consequence: immutable state, command indices, physical target order, failure health flags, budget accounting, reward weights, and audit field names retain their original meaning. The original implementation remains under `tests/reference/recovery_reference.py` as the behavioral reference.
 
-Status: boundary tests and differential comparisons pass. All retained evaluation transitions replay identically, and original output hashes remain unchanged. This verifies the simulator extraction within the exercised state space; controller equivalence and full experiment reproduction remain pending.
+Status: boundary tests and differential comparisons pass. All retained evaluation transitions replay identically, and original output hashes remain unchanged. The comparison verifies simulator equivalence within the exercised state space. Controller checks and the full experiment reproduction provide separate supporting evidence.
 
 ## October 9, 2026 — Separate learning from policy evaluation
 
@@ -60,7 +60,7 @@ Rationale: training changes action-value estimates, whereas evaluation measures 
 
 Consequence: the original random draw order, epsilon expression, sparse table insertion order, JSON format, greedy ties, and validation ranking are retained. Unseen states still select restart from zero values. No fallback controller or held-out-driven redesign is introduced. Process timing and RSS are measurements, not deterministic equivalence targets.
 
-Status: eight development cases produce byte-identical episode, curve, and policy artifacts. All 20 saved final policies reproduce the retained 420 evaluation rows and 2,832 traces without table updates. Full-budget experiment orchestration and reproduction remain pending.
+Status: eight development cases produce byte-identical episode, curve, and policy artifacts. All 20 saved final policies reproduce the retained 420 evaluation rows and 2,832 traces without table updates. The full-budget experiment is separately verified in `full_reproduction_checks.json`.
 
 ## October 9, 2026 — Isolated experiment execution and evidence analysis
 
@@ -101,3 +101,13 @@ Rationale: the original and reproduced CSV writers use CRLF terminators. Normali
 Consequence: .gitattributes preserves the measured serialization without rewriting either evidence set. Other whitespace checks remain enabled.
 
 Status: committed artifact bytes are checked against worktree hashes; the full reproduction and original evidence remain unchanged.
+
+## October 11, 2026 — Dedicated simulation demonstration
+
+Decision: place retained-policy episode execution and the boundary fixture in demo.py, local HTTP delivery in demo_web.py, and browser markup in demo.html. Dedicated scripts provide terminal, fixture, and browser commands; root commands remain compatible.
+
+Rationale: the demo should execute the measured simulator without duplicating recovery logic or relying on the compatibility namespace. Distinguishing learned-state coverage from rule behavior prevents the browser from implying that the baseline was trained.
+
+Consequence: episodes read final policies for seeds 1000–1009 and execute fixed-policy evaluation. Display-only loads, availability, and coverage fields augment trace copies. Terminal commands retain original audit fields. The server binds to 127.0.0.1; no infrastructure controls are present. The fixture remains separate from benchmark results.
+
+Status: 37 tests pass, including six demonstration checks. All 420 retained final episodes and 2,832 decision traces match; the fixture text matches its retained export. The original 187 outputs and full-reproduction scientific records remain unchanged. Browser inspection confirms training recovery, held-out budget exhaustion, and rule recovery. Recording delivery remains unverified.

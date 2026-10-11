@@ -54,17 +54,17 @@ The command refuses existing output directories and destinations inside the reta
 
 ## Demonstrate the agent
 
-These compatibility commands now use the modular implementation and relocated original policies:
+The dedicated demo commands execute the modular simulator with retained final policies:
 
 ```sh
-python3 recovery.py demo --controller filtered --scenario node_0
-python3 recovery.py demo --controller filtered --scenario cpu_4
-python3 recovery.py demo --controller rule --scenario cpu_4
-python3 boundary_demo.py
-python3 demo_server.py
+python3 scripts/demo_agent.py --controller filtered --scenario node_0
+python3 scripts/demo_agent.py --controller filtered --scenario cpu_4
+python3 scripts/demo_agent.py --controller rule --scenario cpu_4
+python3 scripts/boundary_demo.py
+python3 scripts/serve_demo.py
 ```
 
-Open http://127.0.0.1:8765. The server binds only to this computer; stop with Ctrl+C. The browser uses final seed 1000. node_0 shows learned training recovery; cpu_4 shows held-out learner failure and rule recovery. The boundary fixture demonstrates a blocked harmful proposal separately from the held-out experiment. The root recovery.py run command also requires --output; it no longer overwrites retained evidence.
+Open http://127.0.0.1:8765. The server binds only to this computer; stop with Ctrl+C. The browser uses final seed 1000. node_0 shows learned training recovery; cpu_4 shows held-out learner failure and rule recovery. The boundary fixture demonstrates a blocked harmful proposal separately from the held-out experiment. Root recovery.py demo, boundary_demo.py, and demo_server.py remain compatibility commands. Use scripts/serve_demo.py --port 8766 if the default port is occupied. The root recovery.py run command also requires --output; it no longer overwrites retained evidence. See [demo validation and recording sequence](docs/demo_validation.md).
 
 ## Design and measured limits
 

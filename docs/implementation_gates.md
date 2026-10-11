@@ -1,74 +1,45 @@
-# Incremental implementation gates
+# Implementation stages and verification evidence
 
-This is the current implementation record, not a reconstruction of earlier approvals. The original implementation and measured run already exist at the reference commit in reference_manifest.json. Keith approved the proposed structural direction and then requested incremental gated construction, comments, Part 1 in docs, and presentation alignment. He removed the proposed audience review-path experience from scope.
+The implementation was reorganized through separate, verifiable increments on October 9, 2026. The original experiment predates this refactor and remains the behavioral reference at commit `5b5a255`. The sequence below records completed technical stages; it does not imply that later checks preceded the original experiment.
 
-## Commit sequence
-
-| Increment | Planned scope | Evidence before approval | Status |
+| Stage | Acceptance criterion | Verified result | Commit |
 |---|---|---|---|
-| 1. Foundation | Baseline plan, package foundation, gate policy, protocol, evidence inventory, presentation map | Original source hashes; copied-plan identity; existing implementation unchanged | Committed locally: be7a681 |
-| 2. Simulator | State, loads, availability, structural actions, filter, reward, scenario construction | Existing boundary assertions and original-versus-module transitions | Committed locally: c4c50f0 |
-| 3. Controllers | Q update, tie-breaking, rule baseline, training, evaluation | Terminal/update assertions and deterministic comparison | Committed locally: bcdfdf7 |
-| 4. Experiment | Orchestration, configuration, isolated reproduction, analysis and policy verification | Full planned run and artifact comparisons | Orchestration 3e56ca0; relocation ac23ec6; reproduction verified and approved for commit |
-| 5. Demonstration | Local demo, boundary fixture, run instructions, final presentation path alignment | Actual demo cases and final code/evidence consistency | Not started |
-| 6. Release | Approved cumulative changes, package and remote | Clean extraction checks, contents and access status | Not started |
+| Foundation | Preserve the submitted design and identify reference artifacts | Submitted DOCX copied without changes; 199 original tracked files inventoried | `be7a681` |
+| Simulator | Preserve physical execution, filtering, reward, and scenarios | 17 tests at this stage; 217 physical states compared; 2,832 recorded decisions replayed | `c4c50f0` |
+| Controllers | Preserve Q updates, random draws, policy selection, and evaluation | 25 tests at this stage; eight paired development cases; 420 evaluation rows and 2,832 traces matched | `bcdfdf7` |
+| Orchestration | Separate tuning from held-out testing and prevent evidence overwrite | 31 tests; freeze-before-testing control-flow check; five analysis records reproduced | `3e56ca0` |
+| Evidence relocation | Retain original bytes under canonical paths | All 187 output files and both design files match reference hashes | `ac23ec6` |
+| Full reproduction | Execute the complete design and compare deterministic artifacts | 42 model runs; 800,000 training episodes; 2,000 pilot episodes; 136 exact artifact matches and two matching design snapshots | `b217e25` |
+| Git serialization | Preserve CSV line endings across checkouts | CSV normalization disabled; 323 original/reproduced artifact blobs checked against worktree bytes | `fe74d87` |
 
-At each stage the changed files and proposed commit are shown before staging. Approval can cover that specific commit and the named next increment; it does not approve later stages or publication. Commit dates reflect actual execution.
+The test counts describe successive stages, not independent replications. The original study used nine tests. The refactor checkpoint contains 31 tests. The October 11 demonstration increment adds six checks, bringing the current suite to 37.
 
-## Foundation check-in
+## Verification boundaries
 
-Prepared October 9, 2026. Check results are recorded in foundation_checks.json. No new experiment has run, no original experiment file has been edited, and no remote change or package replacement has occurred during this increment.
+Simulator comparisons cover structural execution, rewards, audit fields, and terminal accounting within the exercised state space. Controller comparisons use eight temporary 601-episode cases per implementation, totaling 4,808 development episodes each. These checks preserve the random sequence and serialized policy behavior but do not replace the full-budget experiment.
 
-Approval received October 9, 2026 for the foundation commit and simulator increment. AGENTS.md and .idea/ are excluded from the commit. The simulator commit requires a separate check-in.
+The full reproduction uses Python 3.12.14 and the package source identified in `run_identity.json`. Policies, episode histories, curves, validation, final evaluation, and analysis match the original evidence. Execution time and cumulative process memory are reported separately because they depend on runtime conditions.
 
-Proposed commit: `Establish Part 1 baseline and gated refactor foundation`.
+## Current scope
 
-Next proposed increment: implement the commented simulator and scenario modules while retaining the original implementation as a comparison reference.
+The source modules, configuration, analysis, and isolated reproduction are complete. Root compatibility commands support the local agent demonstration. Dedicated demo-module restructuring is implemented and verified in the October 11 check-in below, awaiting commit approval. A refreshed distribution package, remote synchronization, instructor access, and recording validation remain outside the completed stages above. Repository checks do not establish presentation delivery or submission.
 
-## Simulator check-in — October 9, 2026
+The supporting records are [simulator validation](simulator_validation.md), [controller validation](controller_validation.md), [full reproduction validation](full_reproduction_validation.md), and their machine-readable check files.
 
-The approved simulator increment extracts environment.py, safety_filter.py, and scenarios.py under src/edge_recovery/. The original recovery.py and runnable commands remain intact. Module comments explain the workflow and consequential assumptions using the requested writing style.
+## Demonstration gate check-in — October 11, 2026
 
-Verification: 17 tests passed (nine retained original tests and eight modular simulator tests). The differential check covered 217 reachable physical states, 5,859 structural transitions, 4,428 executed steps, 7,290 successful-state terminal rejections, and all 2,832 retained evaluation transitions. The 24-start manifest serialization and all feasibility records match. All 187 retained output files match their reference hashes. See simulator_checks.json and simulator_validation.md.
+Keith requested continuation of the remaining gates on October 11. This authorizes preparation and verification of the demonstration increment. Per AGENTS.md, commit approval and approval to advance to release remain separate checkpoints.
 
-Proposed commit: `Extract commented simulator and verify reference behavior`.
+Prepared: reusable demo and browser modules, dedicated terminal/browser/fixture scripts, compatible root commands, HTML package data, six focused demo tests, current v4 evidence mapping, and a concise recording sequence. The scientific learning and simulator modules, configurations, retained results, and presentation file are unchanged by this increment.
 
-Approval received October 9, 2026 for the simulator commit and the controllers, training, and evaluation increment. The controller-layer commit requires its own check-in. No full refactored training run, push, instructor invitation, or replacement ZIP has occurred.
+Verified: 37 tests pass. Demo evaluation matches 420 retained episode records and 2,832 decision traces. The boundary fixture's serialized output matches the original export. HTTP checks cover loopback binding, scenario listing, valid episodes, invalid inputs, and unknown routes. Browser inspection confirms filtered node_0 recovery in three steps, filtered cpu_4 failure at step 20, and rule cpu_4 recovery in one step. All 187 original outputs retain reference hashes, and the read-only full-reproduction verifier passes with 136 exact scientific-artifact matches.
 
-## Controller-layer check-in — October 9, 2026
+Evidence: [demo validation](demo_validation.md) and demo_checks.json. Historical approvals and the original six-gate sequence remain available in [the preserved gate history](gate_history_before_demo.md).
 
-The approved increment extracts controllers.py, training.py, evaluation.py, and runtime.py. Comments explain action-value learning, future reward, proposed-command updates, exploration, fixed greedy ties, split boundaries, and metric interpretation.
+Proposed commit: `Extract and verify the simulation demonstration`.
 
-All 25 tests passed: nine retained original tests, eight modular simulator tests, and eight controller/evaluation tests. Eight 601-episode development cases per implementation (4,808 episodes each) produced identical episode CSVs, curves, and Q-table JSON. Timing and cumulative process RSS were explicitly excluded from equality. Evaluation with all 20 saved final policies matched 420 retained episode records and 2,832 traces. Rule action comparisons and validation score comparisons passed, and all 187 original output hashes remain unchanged.
+Approval received October 11, 2026 for the exact 20-file demonstration commit and advancement to release-package preparation. This approval does not include replacing the existing ZIP, pushing GitHub, or changing instructor access.
 
-These development runs are extraction checks, not the full planned experiment. Temporary training files were removed automatically; hashes are recorded in controller_checks.json. Full experiment orchestration, analysis migration, and reproduction remain pending.
+Status at commit preparation: verified and approved for commit. The approved file scope is recorded in demo_validation.md. Earlier unrelated documentation revisions remain outside this demonstration commit. No release package replacement, push, instructor invitation, recording, or submission is included.
 
-Proposed commit: `Extract commented controllers training and evaluation`.
-
-Pre- and post-check-in approval granted October 9, 2026 for the current code, experiment orchestration, evidence relocation, and full isolated reproduction. These stages can be committed after their checks pass. This authorization does not extend to pushing, instructor access, a replacement ZIP, or presentation edits. No push, invitation, presentation edit, or replacement ZIP has occurred.
-
-## Experiment orchestration check-in — October 9, 2026
-
-Pre- and post-check-in approval covers this increment. Added an isolated run command, configuration validation, explicit tuning/freeze/final ordering, read-only original analysis, and policy evidence checks. All 31 tests pass, including overwrite protection and a control-flow test that checks the freeze file before held-out evaluation. The five analysis/policy JSON records recomputed read-only from original evidence match its serialization. Full reproduction follows relocation.
-
-Commit scope: experiment.py, paths.py, evidence.py, policy_verification.py, five scripts for bootstrap/run/validation/analysis/policy checks, test_experiment.py, and these technical records.
-
-Commit: `Add isolated experiment orchestration and evidence checks`.
-
-## Evidence relocation check-in — October 9, 2026
-
-Within the granted pre/post approval, relocated all 187 original outputs with matching hashes, moved unchanged design files into config/, and retained original reference code under tests/reference/. Updated compatibility commands and comparison scripts to use canonical paths. All 31 tests and both extraction comparison scripts pass. Restarted the existing local demo to load its corrected evidence path; no demo redesign is included.
-
-Commit scope: tracked output/config/reference moves, compatibility commands, paths, comparison scripts and check records, package metadata, folder instructions, and technical documentation. AGENTS.md, .idea/, private course attachments, and editable slides remain excluded.
-
-Commit: `Relocate original evidence and connect canonical repository paths`.
-
-## Full reproduction check-in — October 9, 2026
-
-Pre/post approval covers this completed increment. Canonical execution uses Python 3.12.14 and the final package source. All 42 models, 800,000 training episodes and 2,000 pilot episodes completed. Comparison proves 136 exact scientific-artifact matches plus both design snapshots. Scientific metadata fields match; time and process memory are recorded separately. All 31 tests pass. The run includes actual execution, analysis, and test logs. The two additional completed execution records are preserved in the adjacent private build directory as described in full_reproduction_validation.md.
-
-Commit scope: full isolated reproduction artifacts, reproduction verifier, final package-purpose comment, verification report, gate/technical records, README equation and updated instructions, and the source-backed visual plan requested during this work. The visual plan does not change the presentation.
-
-Commit: `Verify full isolated reproduction and record presentation visuals`.
-
-No push, instructor access change, ZIP replacement, deck edit, recording, or LMS submission is included. Dedicated demo-module restructuring and release remain later increments.
+Next proposed increment, after approval: prepare a new candidate distribution package and verify its extracted contents and commands. ZIP replacement and GitHub synchronization require explicit approval for those actions; instructor access remains on hold.

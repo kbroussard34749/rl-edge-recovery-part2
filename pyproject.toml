@@ -12,3 +12,6 @@ dependencies = []
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["edge_recovery*"]
+
+[tool.setuptools.package-data]
+edge_recovery = ["demo.html"]

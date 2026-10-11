@@ -9,4 +9,8 @@ Run scripts from the repository root with Python 3.12. _bootstrap.py locates src
 - verify_simulator_equivalence.py: compare extracted simulator with frozen reference code and traces.
 - verify_controller_equivalence.py: temporary paired training and retained-policy evaluation comparisons.
 
-Root compatibility commands remain available for the existing local demonstration. Dedicated demo entry-point migration is a later increment.
+- demo_agent.py --controller filtered --scenario node_0: execute a saved final policy and print original audit fields; --seed selects 1000 through 1009.
+- boundary_demo.py: print the harmful restore with and without filtering; this fixture is outside final evaluation.
+- serve_demo.py: start the browser demo on this computer at port 8765; --port allows another local port.
+
+Root compatibility commands delegate to the dedicated demo modules. Demonstration execution reads retained policies and writes no experiment evidence.

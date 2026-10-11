@@ -12,6 +12,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+from edge_recovery.demo import run_episode
 from edge_recovery.controllers import greedy, rule, update
 from edge_recovery.environment import ACTIONS, DEMAND, State, loads, physical, available, success, transition
 from edge_recovery.evaluation import evaluate, score
@@ -40,14 +41,11 @@ if __name__ == "__main__":
         print(json.dumps([dict(id=x["id"], **feasible(state_from(x["initial"])))
                           for x in manifest()], indent=2))
     else:
-        _, scenarios = load_design()
-        scenario = next(x for x in scenarios if x["id"] == args.scenario)
-        if args.controller == "rule":
-            q = {}
-        else:
-            path = ORIGINAL_RUN / "final" / args.controller / str(args.seed) / "policy.json"
-            q = {state_from(x["state"]): x["values"] for x in json.loads(path.read_text())}
-        rows, traces = evaluate(q, [scenario], args.controller, args.seed, scenario["split"])
-        for row in traces:
-            print(json.dumps(row, indent=2))
-        print("SUMMARY", json.dumps(rows[0], indent=2))
+        try:
+            episode = run_episode(args.controller, args.scenario, args.seed)
+        except ValueError as error:
+            parser.error(str(error))
+        for row in episode["trace"]:
+            audit = {k: v for k, v in row.items() if k not in ("loads", "availability", "seen")}
+            print(json.dumps(audit, indent=2))
+        print("SUMMARY", json.dumps(episode["summary"], indent=2))

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-11",
+  "status": "verified_approved_for_commit",
+  "python_version": "3.12.14",
+  "tests_passed": 37,
+  "demo_tests": 6,
+  "retained_episode_matches": 420,
+  "retained_trace_matches": 2832,
+  "rule_seed_comparison": "Rule reference uses None; demo seed is only a learner-policy selector and ignored for rule identity comparisons.",
+  "boundary_export_matches": true,
+  "original_outputs_preserved": 187,
+  "full_reproduction_verifier_passed": true,
+  "exact_scientific_artifact_matches": 136,
+  "browser_cases": [
+    {
+      "controller": "filtered",
+      "scenario": "node_0",
+      "success": 1,
+      "steps": 3
+    },
+    {
+      "controller": "filtered",
+      "scenario": "cpu_4",
+      "success": 0,
+      "steps": 20
+    },
+    {
+      "controller": "rule",
+      "scenario": "cpu_4",
+      "success": 1,
+      "steps": 1
+    }
+  ],
+  "presentation": {
+    "filename": "RL_Project_Part_2_Keith_Broussard_Draft_v4.pptx",
+    "sha256": "9e298bd2bb2b3e1804447648c3ea2525a4f8398c294a430cf79cc8da9d826b0f",
+    "slides": 16,
+    "copied_into_repository": false
+  },
+  "rehearsal_guide": {
+    "filename": "Rehearsal_Guide_v4.md",
+    "sha256": "76b9f03b5dd59c75d086c18e94b407a54f8cd74f3f6cfbef2d79b048e1a54d59",
+    "target_seconds": 855,
+    "measured": false
+  },
+  "source_sha256": {
+    "src/edge_recovery/demo.py": "2cd8d19e74a4f8ab01ad47d7c1ed7368f8a553495bcbe6d35ea8a6ce46cd8896",
+    "src/edge_recovery/demo_web.py": "546ea48525811bb18faf691009079eae720db45122d96f4c450b48673fd14944",
+    "src/edge_recovery/demo.html": "c7c36f7fc3883e96cef6e997c4d837881c56793d02a3d0f0e921679e66b83c81",
+    "tests/test_demo.py": "693f424cefbb08baf04ea685221acb7cc72b868efd047fbe20e2e744d867a54a"
+  },
+  "private_evidence_directory": "../.build/demo_gate_2026-10-11",
+  "recording_created_by_this_increment": false,
+  "cli_compatibility_cases_matched": 3,
+  "boundary_cli_compatibility_matches": true
+}
