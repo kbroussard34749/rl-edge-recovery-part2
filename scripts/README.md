@@ -14,3 +14,6 @@ Run scripts from the repository root with Python 3.12. _bootstrap.py locates src
 - serve_demo.py: start the browser demo on this computer at port 8765; --port allows another local port.
 
 Root compatibility commands delegate to the dedicated demo modules. Demonstration execution reads retained policies and writes no experiment evidence.
+
+- verify_reproduction.py --run-dir PATH --output CHECK.json: strict reproduction verification in the executed checkout. For an extracted ZIP or copied checkout, add --archived-checkout; all scientific byte/source comparisons remain active, but filesystem timestamps do not establish execution order.
+- package_release.py --output PATH: build a fresh source-checkout ZIP outside the repository and write its external byte-identity manifest. Existing packages are never replaced.

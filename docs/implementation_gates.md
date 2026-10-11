@@ -43,3 +43,15 @@ Approval received October 11, 2026 for the exact 20-file demonstration commit an
 Status at commit preparation: verified and approved for commit. The approved file scope is recorded in demo_validation.md. Earlier unrelated documentation revisions remain outside this demonstration commit. No release package replacement, push, instructor invitation, recording, or submission is included.
 
 Next proposed increment, after approval: prepare a new candidate distribution package and verify its extracted contents and commands. ZIP replacement and GitHub synchronization require explicit approval for those actions; instructor access remains on hold.
+
+## Release preparation check-in — October 11, 2026
+
+The approved demonstration increment is committed as 9bba42e. Keith approved advancement to release-package preparation. This approval excludes committing this new increment, replacing the existing ZIP, pushing GitHub, or instructor access changes.
+
+Prepared: a fresh candidate ZIP, an external per-file byte-identity manifest, reconciled remaining documentation, and archive-aware reproduction verification. Learning and simulator behavior, frozen configuration, and scientific evidence are unchanged.
+
+Extraction checks exposed reassigned timestamps. The explicit archive mode retains all scientific/source/design comparisons while marking filesystem chronology unestablished; the normal mode remains strict. A focused regression check verifies both behaviors. The current suite has 38 tests.
+
+Proposed commit: `Prepare and validate the repository release candidate`. The exact 14-file scope is in release_validation.md. Extraction results are recorded alongside the candidate in the packages directory. Stage status: prepared and verified; not committed. Extracted validation passes for all 449 file hashes, 38 tests, retained analysis and policy commands, three terminal demo cases, the boundary fixture, 187 original-output hashes, and 136 reproduction artifact matches. The old ZIP remains unchanged; remote synchronization, instructor access, recording, and submission are pending.
+
+Approval received October 11, 2026 for the exact 14-file release commit, replacement of the distribution ZIP with the verified release, and pushing main to GitHub. Instructor access remains on hold. This approval does not authorize an instructor invitation, recording, or LMS submission. Execution outcomes will be recorded alongside the distributed package after completion.

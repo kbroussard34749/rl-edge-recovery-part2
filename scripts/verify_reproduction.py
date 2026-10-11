@@ -20,7 +20,7 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def verify(run_dir: Path) -> dict:
+def verify(run_dir: Path, archived_checkout: bool = False) -> dict:
     """Prove the full budget and retained-artifact identity at this run path."""
     run_dir = run_dir.resolve()
     baseline = json.loads((ROOT / "docs/reference_manifest.json").read_text())
@@ -119,8 +119,14 @@ def verify(run_dir: Path) -> dict:
         saved = list(csv.DictReader(stream))
     assert [{k: str(v) for k, v in row.items()} for row in expected_validation] == saved
     freeze_time = (run_dir / "frozen_protocol.json").stat().st_mtime_ns
-    assert all(freeze_time <= path.stat().st_mtime_ns for path in (run_dir / "final").glob("*/*/policy.json"))
-    assert freeze_time <= (run_dir / "evaluation.csv").stat().st_mtime_ns
+    chronology = all(freeze_time <= path.stat().st_mtime_ns for path in (run_dir / "final").glob("*/*/policy.json"))
+    chronology = chronology and freeze_time <= (run_dir / "evaluation.csv").stat().st_mtime_ns
+    # Archive extraction and Git checkout assign new filesystem timestamps.
+    # The explicit archive mode retains all byte/source/protocol comparisons,
+    # but cannot use those new timestamps as execution-order evidence.
+    if not archived_checkout:
+        assert chronology, "File chronology unavailable; use --archived-checkout only for an extracted/copied checkout"
+
     return dict(
         passed=True, reference_commit=baseline["reference_commit"],
         run_path=str(run_dir.relative_to(ROOT)), original_output_files_preserved=187,
@@ -131,7 +137,9 @@ def verify(run_dir: Path) -> dict:
         training_metadata_timing_and_memory=timing_differences,
         original_provenance=old_provenance, reproduction_provenance=new_provenance,
         selected_alpha=selection, validation_scores=scores, validation_rows_verified=len(saved),
-        freeze_precedes_final_policy_files=True,
+        freeze_precedes_final_policy_files=None if archived_checkout else True,
+        chronology_check_mode="not_established_from_archived_timestamps" if archived_checkout else "strict_filesystem_order",
+
         analysis_and_policy_records_match=True,
         excluded_original_records="Historical execution/test logs and demonstration text exports remain preserved originals; they are not reproduction equivalence targets.",
     )
@@ -141,8 +149,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--archived-checkout", action="store_true",
+                        help="Verify archived bytes; do not infer execution order from extraction timestamps")
     arguments = parser.parse_args()
-    result = verify(arguments.run_dir)
+    result = verify(arguments.run_dir, arguments.archived_checkout)
     arguments.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({key: result[key] for key in (
         "passed", "model_runs", "training_episodes", "pilot_episodes",

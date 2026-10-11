@@ -1,6 +1,6 @@
 # Simulator increment validation
 
-The extracted simulator preserves the original implementation in the comparisons completed October 9, 2026. This check does not train or evaluate a new policy.
+Simulator-stage comparisons completed on October 9, 2026 preserve the original physical and reward behavior within the exercised state space. The stage used 17 tests; the completed implementation later reached 31 tests. These comparisons do not train or evaluate a new policy.
 
 ## Implemented workflow
 
@@ -25,8 +25,8 @@ Comments explain this flow, physical targeting, the web/database dependency, blo
 | Retained evaluation trace replays | All 2,832 match next state, reward, termination, and every audit field |
 | Original output preservation | All 187 retained output files match reference SHA-256 hashes |
 
-simulator_checks.json records the reference commit, counts, and source hashes. The comparison reads the original recovery.py and retained artifacts; it writes only the requested check report.
+simulator_checks.json records the reference commit, counts, and source hashes. The current comparison script reads the unchanged reference source at `tests/reference/recovery_reference.py` and evidence at `results/original_run/`. It writes only the selected check report.
 
-## Limits and next increment
+## Scope and subsequent verification
 
-These checks establish equivalence for the exercised simulator state space, not all arbitrary states or production behavior. Controllers, training, evaluation orchestration, and the live demo still use the original root implementation. They have not been migrated or reproduced in this increment. Original scientific findings and presentation content remain unchanged.
+These checks establish equivalence for the exercised simulator state space, not arbitrary inputs or production conditions. Controller extraction and full experiment reproduction were completed in later stages and are documented in [controller_validation.md](controller_validation.md) and [full_reproduction_validation.md](full_reproduction_validation.md). Root compatibility commands now use modular code. Original scientific findings remain unchanged.

@@ -1,6 +1,6 @@
 # Controller, training, and evaluation validation
 
-The extracted learning and evaluation modules preserve the original behavior in the comparisons completed October 9, 2026. Full experiment orchestration is not yet migrated.
+Controller-stage comparisons completed on October 9, 2026 preserve the original learning and evaluation behavior. The stage used 25 tests; the completed implementation later reached 31 tests. Full orchestration and isolated reproduction were verified separately.
 
 ## Logic and workflow
 
@@ -27,6 +27,6 @@ The extracted learning and evaluation modules preserve the original behavior in 
 
 The 601-episode budget covers full 200-episode curve intervals and a final partial interval. These are temporary development checks totaling 4,808 episodes per implementation. They do not replace or extend the scientific results of the original 800,000-episode experiment. Their artifact hashes and checked source hashes are recorded in controller_checks.json.
 
-## Limits and next step
+## Scope and subsequent verification
 
-Execution time and cumulative process RSS are excluded from equality because they vary with process history and machine conditions. Evaluation comparison uses already saved policies; a full refactored training run is still needed after experiment orchestration is migrated. Original root entry points and the live demo remain in use. Presentation content and recorded scientific findings are unchanged.
+Execution time and cumulative process RSS are excluded from equality because they vary with process history and machine conditions. This stage evaluated saved policies and compared short development runs. The subsequent [full reproduction](full_reproduction_validation.md) verified the complete 800,000-episode training design. Root compatibility entry points now use the modular implementation and relocated original policies. The presentation and original scientific findings remain unchanged.
